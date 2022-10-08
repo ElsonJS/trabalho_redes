@@ -43,31 +43,137 @@
                     <div class="collapse navbar-collapse justify-content-end" id="navbar-links">
                         <div class="navbar-nav">
                             <a class="nav-item nav-link" id="home-menu" href="index.html">Início</a>
-                            <a class="nav-item nav-link" id="tech-menu" href="#tech">Tecnologias</a>
+                            <a class="nav-item nav-link" id="tech-menu" href="#res">Resumo Executivo</a>
+                            <a class="nav-item nav-link" id="tech-menu" href="#esp">Tecnologias</a>
+                            <a class="nav-item nav-link" id="tech-menu" href="#ana">Análise</a>
                         </div>
                     </div>
                 </nav>
             </div>
         </header>
-        <main>
+        <main id="tech">
             <div class="title">
                 <h3><b>📌PROJETO DE REDES DE COMPUTADORES</b></h3>
+                <img src="./img/faculdade-cearense.webp" alt="logo" />
             </div>
             <div class="container-trabalho">
                 <div>
-                    <h4><b>1.RESUMO EXECUTIVO</b></h4>
+                    <h4 id="res"><b>1.RESUMO EXECUTIVO</b></h4>
                     <p>
                         O Grupo Arquiteto de Soluções, criado em outubro de 2017, em um cenário de mercado em constante evolução, inovar e empreender é essencial para o desenvolvimento pessoal e coletivo, a conquista de clientes se tornou um grande desafio para as empresas devido a ampla concorrência.
                         <br />
                         Para que se possa alcançar tal objetivo uma série de fatores podem contribuir para o sucesso de uma empresa atualmente. Fatores como o atendimento, qualidade do serviço e o serviço de pós-venda de qualquer que seja o produto e para que o cliente seja fidelizado a empresa.
                         <br />
                         É de suma importância que os empresários e empreendedores em geral estejam atentos as novas tendências de mercado e as necessidades do cliente para qque possa oferecer um produto e serviço de qualidade, assim o seu produto obterá o sucesso esperado.
+                        <br />
+                        Pensando nisso estamos implantando um provedor de internet utilizando fibra óptica para prover uma conexão com a internet de alta qualidade e estabilidade no bairro jóquei clube na cidade de Fortaleza no Ceará, para alcançarmos esse feito utilizamos o atendimento FTTH aliado a tecnologia de rede Gpon, com links de até 300Mbps com alta disponibilidade de links seja para ambientes domésticos quanto para comerciais.
+                        <br />
+                        Além da conexão com todos os quesitos citados anteriormente, também nos atentamos ao valor final que o cliente irá pagar pelo serviço. A mensalidade cobrada pela nossa empresa será consideravelmente menor comparada a provedores locais atuais, isso mostra a preocupação da empresa junto aos clientes, conseguindo aliar preço justo e qualidade no serviço.
                     </p>
                     <br />
-                    <h4><b>2. OBJETIVOS</b></h4>
+                    <h5><b>1.1. OBJETIVOS</b></h5>
                     <p>
-                        Fornecer a arquitetura adequada para imprementação do provedor de internet, com foco de melhorar a qualidade de conexão com a internet  dos moradores do bairro Jóquei Clube, e posteriormente oferecer o melhor serviço comparado as opções atuais e com excelência em atendimento para o cliente.                        
+                        Fornecer a arquitetura adequada para implementação do provedor de internet, com foco de melhorar a qualidade de conexão com a internet  dos moradores do bairro Jóquei Clube, e posteriormente oferecer o melhor serviço comparado as opções atuais e com excelência em atendimento para o cliente.                        
                     </p>
+                    <br />
+                    <h5><b>1.2. JUSTIFICATIVA</b></h5>
+                    <p>
+                        Visando a existência de poucas opções de provedores de internet disponiveis no bairro e ampla concorrência, iremos prover uma conexão de alta qualidade através do uso da tecnologia de fibra ótica a preços acessiveis, juntamente com o bom atendimento ao cliente promovendo a inclusão digital dos habitantes do bairro jóquei clube.
+                    </p>
+                    <h5><b>1.3. ESTRUTURA DO PROJETO</b></h5>
+                    <P>
+                        Para uma melhor organização e entendimento, o projeto foi organizado em capítulos. No capitulo 2 será apresentado as tecnologias utilizadas para o desenvolvimento da rede, com uma breve descrição sobre Gpon e Criptografia AES 128. A seguir no capitulo 3, uma breve análise e Especificação da Rede, será apresentado algumas ferramentas utilizadas no desenvolvimento desse projeto, Zabbix, AutoCad Maps, Google Earth, Qgis. No capítulo 4, falamos sobre as topologias utilizadas no projeto da rede, topologia em anel e árvore. No capitulo 5 contém os levantamento dos requisitos para bom funcionamento da rede. No capítulo 6, contém os testes a serem realizados para garantir o bom funcionamento da rede, teste de potência e conexão. No capitulo 7, temos o protótipo do desenvolvimento do projeto, identificação da área a ser atendida, distribuição das caixas, conexões entre caixas e plano de emenda. No Capitulo 8, temos as considerações finais.
+                    </P>
+                    <br /><br />
+                    <h4 id="esp"><b>2.ESPECIFICAÇÃO DA TECNOLOGIA QUE SERÁ IMPLEMENTADA NA REDE</b></h4>
+                    <p>
+                        📍<em><b>GPOM</b></em> significa (GIGABIT PASSIVE OPTICAL NETWORK) ou Rede Optica Passiva Gigabit, o GPON é uma rede passiva, que quer dizer que entre a OLT (Optical Line Terminal) e a ONU (Optical Network Unit), ou mais especificamente entre o concentrador da rede e os clientes, não existe nenhum elemento ativo/energizado. Ela é uma rede óptica com um tráfego acima de 1 Gbps, ou 1 Gigabit por segundo e é normalizada pelo órgão ITU-T G.984, que dentro da norma há várias partes que se referem às especificidades da tecnologia, como a camada fisica, hardware, protocolos de comunicação a OLT e as ONU. Na norma fala sobre todo o funcionamento da rede GPON, desde o G.984.1 até G.984.5
+                        <br />
+                        Estrutura da rede para melhor entendimento do projeto e do funcionamento da rede iremos mostrar os principais elementos da rede. A estrutura das redes GPON é normatizada pelo órgão ITU-T G.984, que descreve todo o seu funcionamento.
+                    </p>
+                    <img class="gpom" src="http://www.entelco.com.br/blog/wp-content/uploads/2017/02/splitter.png" alt="figura gpom" />
+                    <br /> <br />
+                    <p>
+                        📍<em><b>OLT</b></em> significa terminal de Linha Óptica em português. Ele está localizado na central (POP), constituindo-se em porta de enlace entre a rede de acesso e a rede metropolitana. A OLT é responsável por controlar e administrar a transmissão de dados para as ONU's, porém, é preciso de um receptor que opere em modo rajada (volumes esporádicos de tráfego). Rajadas são conjuntos de bits vindo de uma determinada ONU. Portanto, é preciso controlar os diferentes niveis de amplitude do sinal, ja que as ONU's estão localizadas em determinados locais distantes da OLT
+                    </p>
+                    <img class="OLT" src="https://images8.webydo.com/92/9293449/3958%2F462683D5-0DAE-21F5-07F8-95A80A4C1829.jpg_650" alt="figura OLT" />
+                    <br /> <br />
+                    <P>
+                        📍<em><b>ONU</b></em> significa Unidade de Rede Óptica em português. A sua função principal é fornecer acesso aos usuários, concentrando o tráfego até que possa transmiti-los. A ONU está localizada em distâncias longas ou curtas do usuário final. Além disso, quando a OLT envia mensagens em broadcast, as ONU's reconhecem apenas mensagens destinadas a ela e ignoram as demais. Outra funcionalidade importante é a conversão do sinal óptico em elétrico para os dispositivos padrões, como telefones, computadores e outros equipamentos de aplicação do usuário final
+                    </P>
+                    <img class="onu" src="https://cdn.shopify.com/s/files/1/0259/0271/0877/products/03_APC_1024x1024@2x.png?v=1563462698" alt="figura onu" />
+                    <br /> <br />
+                    <p>
+                        📍<em><b>SPLITTER</b></em> é um dispositivo passivo capaz de combinar e dividir o sinal óptico. Em sentido downstream(Rio abaixo) este dispositivo irá dividir o sinal de entrada e o direciona para todas as portas de saida que estão ligadas com as ONU's.
+                    </p>
+                    <img class="splitter" src="https://www.fibracem.com/wp-content/uploads/2021/06/0027_NAP_POP_POSTE-BAP.1-2.png" alt="figura splitter" />
+                    <img class="splitter" src="https://www.blog.ipv7.com.br/wp-content/uploads/2019/01/Splitter-Conectorizado.jpg" alt="figura splitter" />
+                    <br /> <br />
+                    <h5><b>2.1. CRIPTOGRAFIA AES-128</b></h5>
+                    <p>
+                        Os beneficios da fibra optica são bem conhecidos no meio da TI, além da sua capacidade de transmissão e tempo de vida útil, apresenta bons argumentos quando se trata de segurança. Um dos principais pontos é a complexidade que se tem ao tentar interceptar um sinal óptico sem interromper o tráfego existente. Para melhor entendimento a transmissão entre OLT e ONU funciona da seguinte forma: No sentido de downstream os dados são enviados em broadcast (envio não direcionado). As informações de cada ONU são divididas no tempo (TDM-Time Division Multiplexing). Desta forma, toda informação provida pelo OLT é repassada a todas ONU's da rede, mas cada ONU filtra as informações que lhe são destinadas (ZTE, 2011), a abaixo ilustra esta forma de comunicação. Uma forma para se garantir a segurança dos dados transmitidos na rede é a utilização de criptografia, sendo utilizado o algoritmo Advanced Encryption Standard (AES).
+                    </p>
+                    <img class="aes" src="https://www.researchgate.net/profile/Selvarajan-Rajalakshmi/publication/265541495/figure/fig2/AS:669258736476168@1536575125359/shows-the-he-physical-tree-topology-of-TDM-PON-network-At-the-Central-Office-CO-the.jpg" alt="figura criptografia aes" />
+                    <br /> <br />
+                    <p>
+                        A Criptografia com AES-128 transforma pacotes de dados de texto simples e os transmitem em texto cifrado.Em suma, o algoritmo AES-128 usa uma chave para alterar dados de texto simples de 128 bits em outros dados de texto cifrado de 128 bits para transmissão usando uma série de operações matemáticas. Em seguida, a extremidade de recebimento usa uma chave para descriptografar o texto cifrado.
+                    </p>
+                    <br />
+                    <h5><b>2.1.1. AUTENTICAÇÃO DA ONU</b></h5>
+                    <p>
+                        Para que uma ONU inicie seu trifego na rede ela deve ser reconhecida pela OLT atrvés de seu número de série único. A OLT poder è configurada para impedir que qualquer ONU seja ativads sem a autorização do administrador.
+                    </p>
+                    <h5><b>2.1.2. ENCAMINHAMENTO SEGURO</b></h5>
+                    <p>
+                        A OLT permite o uso de um recurso chamado Encaminhamento Seguro, Quando o Encaminhamento Seguro está habilitado para uma VLAN, o serviço forma-se ciente da sessão de IP e espiona as mensagens de oferta de DHCP para as ONU's e armazena em cache as informações de endereço IP e DHCP alocadas. Se o tráfego não tiver origem no endereço correto, o tráfego serà descartado, isso também fanciona para dispositivos conectados com endereços IP estáticos, a OLT passa comparar o endereço IP configurado com o endereço de origem do dispositivo configurado estaticamente no quadro de dados. Se eles não corresponderem, o tráfego será descartado.
+                    </p>
+                    <h5><b>2.1.3. MAIS SEGURANÇA</b></h5>
+                    <p>
+                        Aqui segue mais algumas medidas a serem tomadas para aumentar a segurança da rede.<br /><br />
+
+                        ◾ Limitar o número de endereços MAC que podem ser gravados pela OLT.<br />
+                        ◾ Bloquear Movimentos de MAC dentro da OLT.<br />
+                        ◾ Lista de Controle de Acessos.<br />
+                        ◾ Segurança 802.1xPort.<br />
+                        ◾ PON Card Security.<br />
+                    </p>
+                    <h4 id="ana"><b>3.ANÁLISE E ESPECIFICAÇÃO DA REDE</b></h4>
+                    <p>
+                        Neste capitulo descreve as ferramentas utilizadas para o desenvolvimento e implantação do nosso projeto.
+                    </p>
+                    <h5><b>3.1. ZABBIX</b></h5>
+                    <p>
+                        Zabbix é um software que monitora vários parâmetros de rede de computadores e saúde e integridade de servidores. Zabbix usa um mecanismo de notificação flexível que permite os usuários configurarem alerta de e-mail e sms baseado em praticamente qualquer evento. Isto permite uma rápida reação para problemas em servidores Zabbix oferece relatórios e visualização de dados com excelentes caracteristicas baseado nos dados armazenados. Isso faz do Zabbix ideal para o planejamento de capacidade e e da saúde dos servidores pode ser avaliado a partir de qualquer localização. Devidamente configurado, Zabbix pode desempenhar um papel importante no controle da infraestrutura de TI. Isto é igualmente verdadeiro para as pequenas organizações com poucos servidores e para as grandes empresas com muitos servidores.
+                    </p>
+                    <h6>Dashboard</h6>
+                    <img class="Zabbix" src="https://www.zabbix.com/documentation/4.0/assets/en/manual/web_interface/dashboard4.png" alt="figura Zabbix" />
+                    <br /><br />
+                    <h6>Hosts</h6>
+                    <img class="Zabbix" src="https://www.linuxnaweb.com/images/post/2018/adicionando-host-com-agent-no-zabbix-02.png" alt="figura Zabbix" />
+                    <br /><br />
+                    <h6>Mapa</h6>
+                    <img class="Zabbix" src="http://storage.ning.com/topology/rest/1.0/file/get/1271119692?profile=RESIZE_1024x1024" alt="figura Zabbix" />
+                    <br /><br />
+                    <h5><b>3.2. AUTOCAD MAP</b></h5>
+                    <p>
+                        O software AutoCAD Map 3D é um aplicativo de planejamento e gerenciamento de infraestruturas, onde será feito todo o projeto com caixas e cabos a serem implantados de forma Georreferenciada.
+                    </p>
+                    <img class="Zabbix" src="https://damassets.autodesk.net/content/dam/autodesk/www/products/autocad/fy21/toolsets/autocad-map-3d/images/autocad-map-3d-toolset-large-1920x1050.jpg" alt="figura Zabbix" />
+                    <br /><br />
+                    <h5><b>3.3. GOOGLE EARTH</b></h5>
+                    <p>
+                        Google Earth é um programa de computador desenvolvido e distribuído pela empresa estadunidense do Google cuja função é apresentar um modelito tridimensional do globo terrestre, construido a partir de imagens de satélite.
+                    </p>
+                    <img class="Zabbix" src="https://img.ibxk.com.br/2015/06/30/30180002475115-t480.jpg" alt="figura Zabbix" />
+                    <br /><br />
+                    <img class="Zabbix" src="https://img.ibxk.com.br/2015/06/30/30175804241109.jpg" alt="figura Zabbix" />
+                    <br /><br />
+                    <h5><b>3.4. QGIS</b></h5>
+                    <p>
+                        QGIS é um software livre com código-fonte aberto, multiplataforma de sistema de informação geográfica que permite a visualização, edição e análise de dados georreferenciados.
+                    </p>
+                    <img class="Zabbix" src="https://qgis.org/pt_BR/_static/images/about-screenshot.png" alt="figura Zabbix" />
+                    <br /><br />
                 </div>
             </div>
         </main>
