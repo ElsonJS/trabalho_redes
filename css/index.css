@@ -1,0 +1,102 @@
+/*CSS GERAIS DÁ PÁGINA*/
+
+body{
+    font-family: 'Roboto', sans-serif;
+    background-image: linear-gradient(45deg, #B0E0E6 0%, 	#EEE8AA 46%, #E0FFFF 100%);
+    height: 100vh;
+    width: 100vh;
+}
+
+/*CSS DA BARRA DE NAVEGAÇÃO*/
+
+header, .navbar{
+    background-image: linear-gradient(45deg, #1C1C1C 0%, 	#363636 46%, #000000 100%);
+}
+
+#nav-container{
+    padding-top: 0;
+    padding-bottom: 0;
+}
+
+.navbar-dark .navbar-brand{
+    position: relative;
+    padding: 0;
+    color: #fff;
+    margin-top: 5px;
+    left: 30px;
+    font-weight: bold;
+    font-size: 15px;
+    filter: drop-shadow(0 0 0.4rem #7fff00);
+}
+
+.navbar-dark .navbar-brand:hover{
+    color: #FFD700;
+}
+
+#navbar-links a {
+    color: #fff;
+    font-weight: bolder;
+}    
+
+#navbar-links a:hover {
+    color: #FFD700;
+    font-weight: bold;
+}
+
+.navbar-expand-lg .navbar-nav .nav-link{
+    padding: 0.5rem .7rem;
+    margin-top: 3px;
+}
+
+/*informações*/
+
+.container-trabalho{
+    margin-top: auto;
+}
+
+.container-trabalho img{
+    position: relative;
+    margin-top: 70px;
+    left: 520px;
+}
+
+.title{
+    position: relative;
+    left: 450px;
+    font-weight: bold;
+}
+
+.title h2{
+    position: relative;
+    left: 60px;
+}
+
+.title .sub{
+    position: relative;
+    left: 150px;
+}
+
+.title .sub-01{
+    position: relative;
+    left: 30px;
+}
+
+.title p{
+    position: relative;
+    left: 10px;
+}
+
+.title .par-01{
+    position: relative;
+    left: 90px;
+}
+
+.title .par-02{
+    position: relative;
+    left: 60px;
+}
+
+.title .par-03{
+    position: relative;
+    left: 130px;
+}
