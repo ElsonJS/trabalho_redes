@@ -2,7 +2,8 @@
 
 body{
     font-family: 'Roboto', sans-serif;
-    background-image: linear-gradient(45deg, #B0E0E6 0%, #FFD700 46%, #FFFF00 100%);
+    background-image: linear-gradient(45deg, #FF4500 0%, 	#FFFF00 46%, #FF6347 100%);
+    background-attachment: fixed;
     height: 100vh;
     width: 100vh;
 }
@@ -10,7 +11,7 @@ body{
 /*CSS DA BARRA DE NAVEGAÇÃO*/
 
 header, .navbar{
-    background-image: linear-gradient(45deg, #1C1C1C 0%, 	#363636 46%, #000000 100%);
+    background-image: linear-gradient(45deg, #1C1C1C 0%, 	#0000CD 46%, #000000 100%);
 }
 
 #nav-container{
@@ -36,6 +37,7 @@ header, .navbar{
 #navbar-links a {
     color: #fff;
     font-weight: bolder;
+    filter: drop-shadow(0 0 0.4rem #7fff00);
 }    
 
 #navbar-links a:hover {
@@ -51,19 +53,28 @@ header, .navbar{
 /*informações*/
 
 .container-trabalho{
-    margin-top: auto;
+    position: absolute;
+    margin-top: 80px;
+    background-color: transparent;
+    height: 550px;
+    width: 500px;
+    left: 400px;
 }
 
-.container-trabalho img{
+img{
     position: relative;
-    margin-top: 70px;
-    left: 520px;
+    filter: drop-shadow(0 0 0.4rem #7fff00);
+    margin-top: 1px;
+    left: 210px;
+    height: 170px;
+    width: 250px;
 }
 
 .title{
     position: relative;
-    left: 450px;
+    left: 110px;
     font-weight: bold;
+    filter: drop-shadow(0 0 0.4rem #7fff00);
 }
 
 .title h2{

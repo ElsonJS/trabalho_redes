@@ -2,7 +2,7 @@
 
 body{
     font-family: 'Roboto', sans-serif;
-    background-image: linear-gradient(45deg, #B0E0E6 0%, #FFD700 46%, #FFFF00 100%);
+    background-image: linear-gradient(45deg, #FF4500 0%, 	#FFFF00 46%, #FF6347 100%);
     height: 100vh;
     width: 100vh;
     background-attachment: fixed;
@@ -11,7 +11,7 @@ body{
 /*CSS DA BARRA DE NAVEGAÇÃO*/
 
 header, .navbar{
-    background-image: linear-gradient(45deg, #1C1C1C 0%, 	#363636 46%, #000000 100%);
+    background-image: linear-gradient(45deg, #1C1C1C 0%, 	#0000CD 46%, #000000 100%);
 }
 
 #nav-container{
@@ -37,6 +37,7 @@ header, .navbar{
 #navbar-links a {
     color: #fff;
     font-weight: bolder;
+    filter: drop-shadow(0 0 0.4rem #7fff00);
 }    
 
 #navbar-links a:hover {
@@ -55,12 +56,7 @@ header, .navbar{
     position: relative;
     margin-top: 160px;
     left: 340px;
-    filter: drop-shadow(0 0 0.4rem #fff);
-}
-
-.title:hover{
-    color: #fff;
-    filter: drop-shadow(0 0 0.4rem #000000);
+    filter: drop-shadow(0 0 0.4rem #7fff00);
 }
 
 .title img{
@@ -78,6 +74,7 @@ header, .navbar{
     margin-top: 50px;
     left: 150px;
     font-weight: bolder;
+    filter: drop-shadow(0 0 0.4rem #7fff00);
 }
 
 .gpom{
@@ -130,267 +127,157 @@ header, .navbar{
 }
 
 @media only screen 
-   and (max-width : 1600px) {
-    body{
-        font-family: 'Roboto', sans-serif;
-        background-image: linear-gradient(45deg, #B0E0E6 0%, #FFD700 46%, #FFFF00 100%);
-        height: 100vh;
-        width: 100vh;
-        background-attachment: fixed;
-    }
-    
-    /*CSS DA BARRA DE NAVEGAÇÃO*/
-    
-    header, .navbar{
-        background-image: linear-gradient(45deg, #1C1C1C 0%, 	#363636 46%, #000000 100%);
-    }
-    
-    #nav-container{
-        padding-top: 0;
-        padding-bottom: 0;
-    }
-    
-    .navbar-dark .navbar-brand{
-        position: relative;
-        padding: 0;
-        color: #fff;
-        margin-top: 5px;
-        left: 30px;
-        font-weight: bold;
-        font-size: 15px;
-        filter: drop-shadow(0 0 0.4rem #7fff00);
-    }
-    
-    .navbar-dark .navbar-brand:hover{
-        color: #FFD700;
-    }
-    
-    #navbar-links a {
-        color: #fff;
-        font-weight: bolder;
-    }    
-    
-    #navbar-links a:hover {
-        color: #FFD700;
-        font-weight: bold;
-    }
-    
-    .navbar-expand-lg .navbar-nav .nav-link{
-        padding: 0.5rem .7rem;
-        margin-top: 3px;
-    }
-    
-    /*informativo do site*/
-    
+   and (max-width : 768px) {
+
     .title{
-        position: relative;
-        margin-top: 160px;
-        left: 340px;
-        filter: drop-shadow(0 0 0.4rem #fff);
+        left: 100px;
     }
-    
-    .title:hover{
-        color: #fff;
-        filter: drop-shadow(0 0 0.4rem #000000);
-    }
-    
-    .title img{
-        position: relative;
-        left: 230px;
-        margin-top: -220px;
-        height: 80px;
-        width: 115px;
-    }
-    
+
     .container-trabalho{
-        position: absolute;
-        width: 1000px;
-        background-color: transparent;
-        margin-top: 50px;
-        left: 150px;
-        font-weight: bolder;
+        left: 35px;
+        width: 700px;
     }
     
-    .gpom{
-        position: relative;
-        width: 100%;
-        height: 300px;
-        border-radius: 10px;
-        border: 1px solid #fff;
-    }
-    
-    .OLT{
-        position: relative;
-        width: 100%;
-        height: 300px;
-        border-radius: 10px;
-        border: 1px solid #fff;
-    }
-    
-    .onu{
-        position: relative;
-        width: 330px;
-        height: 300px;
-        left: 300px;
-        border-radius: 10px;
-        border: 1px solid #fff;
-    }
-    
-    .splitter{
-        position: relative;
-        width: 330px;
-        height: 350px;
-        left: 150px;
-        border-radius: 10px;
-    }
-    
-    .aes{
-        position: relative;
-        width: 100%;
-        height: 300px;
-        border-radius: 10px;
-        border: 1px solid #fff;
-    }
-    
-    .Zabbix{
-        position: relative;
-        width: 100%;
-        height: 100%;
-        border-radius: 10px;
-        border: 1px solid #fff;
-    }
-   
 }
 
 @media only screen 
-   and (max-width : 1200px) {
-    body{
-        font-family: 'Roboto', sans-serif;
-        background-image: linear-gradient(45deg, #B0E0E6 0%, #FFD700 46%, #FFFF00 100%);
-        height: 100vh;
-        width: 100vh;
-        background-attachment: fixed;
-    }
-    
-    /*CSS DA BARRA DE NAVEGAÇÃO*/
-    
-    header, .navbar{
-        background-image: linear-gradient(45deg, #1C1C1C 0%, 	#363636 46%, #000000 100%);
-    }
-    
-    #nav-container{
-        padding-top: 0;
-        padding-bottom: 0;
-    }
-    
-    .navbar-dark .navbar-brand{
-        position: relative;
-        padding: 0;
-        color: #fff;
-        margin-top: 5px;
-        left: 30px;
-        font-weight: bold;
-        font-size: 15px;
-        filter: drop-shadow(0 0 0.4rem #7fff00);
-    }
-    
-    .navbar-dark .navbar-brand:hover{
-        color: #FFD700;
-    }
-    
-    #navbar-links a {
-        color: #fff;
-        font-weight: bolder;
-    }    
-    
-    #navbar-links a:hover {
-        color: #FFD700;
-        font-weight: bold;
-    }
-    
-    .navbar-expand-lg .navbar-nav .nav-link{
-        padding: 0.5rem .7rem;
-        margin-top: 3px;
-    }
-    
-    /*informativo do site*/
-    
+   and (max-width : 700px) {
+
     .title{
-        position: relative;
-        margin-top: 160px;
-        left: 340px;
-        filter: drop-shadow(0 0 0.4rem #fff);
+        left: 100px;
     }
-    
-    .title:hover{
-        color: #fff;
-        filter: drop-shadow(0 0 0.4rem #000000);
-    }
-    
-    .title img{
-        position: relative;
-        left: 230px;
-        margin-top: -220px;
-        height: 80px;
-        width: 115px;
-    }
-    
+
     .container-trabalho{
-        position: absolute;
-        width: 1000px;
-        background-color: transparent;
-        margin-top: 50px;
-        left: 150px;
-        font-weight: bolder;
+        left: 35px;
+        width: 700px;
     }
     
-    .gpom{
-        position: relative;
-        width: 100%;
-        height: 300px;
-        border-radius: 10px;
-        border: 1px solid #fff;
+}
+
+@media only screen 
+   and (max-width : 600px) {
+
+    .title{
+        left: 130px;
+        width: 400px;
     }
-    
-    .OLT{
-        position: relative;
-        width: 100%;
-        height: 300px;
-        border-radius: 10px;
-        border: 1px solid #fff;
+
+    .title h3{
+        font-size: 18px;
     }
-    
+
+    .title img{
+        left: 130px;
+    }
+
+    .container-trabalho{
+        left: 35px;
+        width: 530px;
+    }
+
     .onu{
-        position: relative;
-        width: 330px;
-        height: 300px;
-        left: 300px;
-        border-radius: 10px;
-        border: 1px solid #fff;
+        left: 100px;
     }
-    
+
     .splitter{
-        position: relative;
-        width: 330px;
-        height: 350px;
-        left: 150px;
-        border-radius: 10px;
+        margin: 5px;
+        left: 100px;
     }
     
-    .aes{
-        position: relative;
-        width: 100%;
-        height: 300px;
-        border-radius: 10px;
-        border: 1px solid #fff;
+}
+
+@media only screen 
+   and (max-width : 400px) {
+
+    .navbar-dark .navbar-brand{
+        left: 0px;
+        font-size: 10px;
+    }
+
+    .title{
+        left: 75px;
+        width: 400px;
+    }
+
+    .title h3{
+        font-size: 13px;
+    }
+
+    .title img{
+        left: 80px;
+        margin-top: -180px;
+    }
+
+    .container-trabalho{
+        left: 25px;
+        width: 350px;
+    }
+
+    .container-trabalho h4{
+        font-size: 18px;
+    }
+
+    .container-trabalho p{
+        font-size: 12px;
+    }
+
+    .onu{
+        left: 30px;
+        width: 200px;
+    }
+
+    .splitter{
+        margin: 5px;
+        left: 10px;
+        width: 250px;
     }
     
-    .Zabbix{
-        position: relative;
-        width: 100%;
-        height: 100%;
-        border-radius: 10px;
-        border: 1px solid #fff;
+}
+
+@media only screen 
+   and (max-width : 300px) {
+
+    .navbar-dark .navbar-brand{
+        left: 0px;
+        font-size: 10px;
     }
-   
+
+    .title{
+        left: 20px;
+        width: 400px;
+    }
+
+    .title h3{
+        font-size: 13px;
+    }
+
+    .title img{
+        left: 80px;
+        margin-top: -180px;
+    }
+
+    .container-trabalho{
+        left: 10px;
+        width: 280px;
+    }
+
+    .container-trabalho h4{
+        font-size: 18px;
+    }
+
+    .container-trabalho p{
+        font-size: 12px;
+    }
+
+    .onu{
+        left: 30px;
+        width: 200px;
+    }
+
+    .splitter{
+        margin: 5px;
+        left: 10px;
+        width: 250px;
+    }
+    
 }
