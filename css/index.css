@@ -52,6 +52,25 @@ header, .navbar{
 
 /*informações*/
 
+
+.container-cardapio{
+    position: absolute;
+    background-color: transparent;
+    margin-top: 70px;
+    left: 10px;
+}
+
+.container-cardapio a{
+    text-shadow: none;
+    font-weight: bold;
+    color: black;
+}
+
+.container-cardapio a:hover{
+    text-decoration: none;
+    color: rgb(18, 124, 156);
+}
+
 .container-trabalho{
     position: absolute;
     margin-top: 80px;
@@ -111,3 +130,155 @@ img{
     position: relative;
     left: 115px;
 }
+
+@media only screen 
+   and (max-width : 768px) {
+
+    .navbar-dark .navbar-brand{
+        font-size: 15px;
+        left: 1px;
+    }
+
+    .container-trabalho{
+        left: 85px;
+    }
+
+}
+
+@media only screen 
+   and (max-width : 700px) {
+
+    .navbar-dark .navbar-brand{
+        font-size: 15px;
+        left: 1px;
+    }
+
+    .container-trabalho{
+        left: 40px;
+    }
+
+}  
+
+@media only screen 
+   and (max-width : 400px) {
+
+    .navbar-dark .navbar-brand{
+        font-size: 15px;
+        left: 1px;
+    }
+
+    .container-trabalho{
+        left: -50px;
+    }
+
+    img{
+        left: 140px;
+    }
+
+    .title{
+        left: 130px;        
+    }
+
+    .title h1{
+        font-size: 23px;       
+    }
+
+    .title h2{
+        font-size: 16px;
+        left: -30px;
+    }
+
+    .title p{
+        font-size: 12px;
+    }
+
+    .title .par{
+        position: relative;
+        left: -50px;
+    }
+
+    .title .oi{
+        left: 45px;
+    }
+
+    .title .par-01{
+        left: 10px;
+    }
+
+    .title .sub{
+        left: 90px;
+    }
+
+    .title .par-02{
+        left: 60px;
+    }
+
+    .title .par-03{
+        left: 50px;
+    }
+
+} 
+
+@media only screen 
+   and (max-width : 300px) {
+
+    .navbar-dark .navbar-brand{
+        font-size: 10px;
+        left: 1px;
+    }
+
+    .container-trabalho{
+        left: -100px;
+    }
+
+    img{
+        left: 130px;
+    }
+
+    .title{
+        left: 130px;        
+    }
+
+    .title h1{
+        font-size: 23px;       
+    }
+
+    .title h2{
+        font-size: 13px;
+        left: -30px;
+    }
+
+    .title p{
+        font-size: 8px;
+    }
+
+    .title .par{
+        position: relative;
+        left: 8px;
+    }
+
+    .title .oi{
+        left: 65px;
+    }
+
+    .title .par-01{
+        left: 50px;
+    }
+
+    .title .sub{
+        left: 100px;
+    }
+
+    .title .par-02{
+        left: 80px;
+    }
+
+    .title .sub-01{
+        left: 50px;
+    }
+
+    .title .par-03{
+        left: 80px;
+    }
+
+} 
