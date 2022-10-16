@@ -4,8 +4,10 @@ body{
     font-family: 'Roboto', sans-serif;
     background-color: #E0FFFF;
     background-attachment: fixed;
-    height: 100vh;
-    width: 100vh;
+}
+
+.container {
+    padding: 70px 0;
 }
 
 /*CSS DA BARRA DE NAVEGAÇÃO*/
@@ -52,7 +54,7 @@ header, .navbar{
 
 .container{
     position: absolute;
-    margin-top: 200px;
+    margin-top: 130px;
     left: 130px;
 }
 
@@ -90,24 +92,24 @@ header, .navbar{
 }
   
 .about-title {
-font-size: 17px;
-color: #444;
-text-transform: uppercase;
-font-weight: bold;
+    font-size: 17px;
+    color: #444;
+    text-transform: uppercase;
+    font-weight: bold;
 }
 
 #about-list {
-list-style: none;
-padding-left: 0;
+    list-style: none;
+    padding-left: 0;
 }
 
 #about-list li {
-line-height: 30px;
+    line-height: 30px;
 }
 
 #about-list i {
-color: #FF4500;
-margin-right: 15px;
+    color: #FF4500;
+    margin-right: 15px;
 }
 
   /*footer*/
@@ -118,32 +120,42 @@ margin-right: 15px;
 }
   
 #copy-area .container {
-margin-top: 730px;
-text-align: center;
+    margin-top: 650px;
+    text-align: center;
 }
 
 #copy-area .container p {
-margin-bottom: 0;
-color: #333;
+    margin-bottom: 0;
+    color: #333;
 }
 
 #copy-area .container a {
-font-weight: bold;
-color: #FF4500;
-text-decoration: none;
+    font-weight: bold;
+    color: #FF4500;
+    text-decoration: none;
 }
 
 #copy-area .container a:hover {
-text-decoration: none;
-color: #3EC1D5;
+    text-decoration: none;
+    color: #3EC1D5;
 }
 
 @media only screen 
 and (max-width : 768px){
 
+    .navbar-dark{
+        width: 100%;
+    }
+
+    .navbar-dark .navbar-brand{
+        left:10px;
+        font-size: 16px;
+    }
+
     .container{
         position: absolute;
-        margin-top: 100px;
+        margin-top: 80px;
+        left: 16px;
     }
 
     .img-fluid{
@@ -151,34 +163,124 @@ and (max-width : 768px){
     }
 
     .main-title {
-        margin: 0 0 65px 0;
-        font-size: 20px;
-        text-align: center;
+        font-size: 28px;
     }
         
     .main-title::after {
         border-top: none
     }
+
+    #copy-area .container {
+        margin-top: 570px;
+    }
 }
 
 @media only screen 
-and (max-width : 600px){
+and (max-width : 425px){
+
+    .navbar-dark{
+        width: 100%;
+    }
+
+    .navbar-dark .navbar-brand{
+        left:1px;
+        font-size: 13px;
+    }
 
     .container{
         position: absolute;
-        margin-top: 100px;
-        left: 10px;
+        margin-top: 20px;
+        left: 5px;
+        width: 100%;
     }
 
     .img-fluid{
-        left: 50px;
+        left: 60px;
     }
 
     .main-title {
         font-size: 20px;
     }
-        
+
     .main-title::after {
         border-top: none
+    }
+
+    #copy-area .container {
+        margin-top: 580px;
+    }
+}
+
+@media only screen 
+and (max-width : 400px){
+
+    .navbar-dark{
+        width: 100%;
+    }
+
+    .navbar-dark .navbar-brand{
+        left:1px;
+        font-size: 13px;
+    }
+
+    .container{
+        position: absolute;
+        margin-top: 20px;
+        left: 5px;
+        width: 100%;
+    }
+
+    .img-fluid{
+        left: 60px;
+    }
+
+    .main-title {
+        font-size: 20px;
+    }
+
+    .main-title::after {
+        border-top: none
+    }
+
+    #copy-area .container {
+        margin-top: 565px;
+    }
+}
+
+@media only screen 
+and (max-width : 300px){
+
+    .navbar-dark{
+        width: 100%;
+    }
+
+    .navbar-dark .navbar-brand{
+        left:1px;
+        font-size: 13px;
+    }
+
+    .container{
+        position: absolute;
+        margin-top: 20px;
+        left: 1px;
+        width: 100%;
+    }
+
+    .img-fluid{
+        position: relative;
+        margin-top: -70px;
+        left: 1px;
+    }
+
+    .main-title {
+        font-size: 16px;
+    }
+
+    .main-title::after {
+        border-top: none
+    }
+
+    #copy-area .container {
+        margin-top: 565px;
     }
 }

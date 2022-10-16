@@ -3,9 +3,11 @@
 body{
     font-family: 'Roboto', sans-serif;
     background-color: #E0FFFF;
-    height: 100vh;
-    width: 100vh;
     background-attachment: fixed;
+}
+
+.container {
+    padding: 70px 0;
 }
 
 /*CSS DA BARRA DE NAVEGAÇÃO*/
@@ -185,16 +187,21 @@ video{
 @media only screen 
    and (max-width : 768px) {
 
+    header .navbar-dark{
+        position: absolute;
+        width: 100%;
+    }
+
     .video{
         position: relative;
-        left: 22.5px;
-        width: 650px;
+        left: 21px;
+        width: 730px;
         height: 250px;
     }
     
     video{
         position: relative;
-        width: 650px;
+        width: 730px;
         height: 250px;
         border-radius: 10px;
     }
@@ -209,29 +216,54 @@ video{
 
     .container-trabalho{
         left: 35px;
-        width: 640px;
+        width: 700px;
     }
+
+    .onu{
+        left: 50px;
+        width: 300px;
+    }
+
+    .splitter{
+        margin: 5px;
+        left: 8px;
+       
     
 }
 
 @media only screen 
-   and (max-width : 600px) {
+   and (max-width : 425px) {
+
+    header .navbar-dark{
+        position: absolute;
+        width: 100%;
+    }
+
+    .navbar-dark .navbar-brand{
+        position: relative;
+        left: 0;
+        font-size: 12px;
+    }
 
     .video{
         position: relative;
-        left: 18px;
-        width: 450px;
+        left: 13px;
+        width: 400px;
         height: 200px;
     }
     
     video{
         position: relative;
-        width: 450px;
+        width: 400px;
         height: 200px;
     }
 
     .title{
-        left: 100px;
+        left: 13px;
+    }
+
+    .title h3{
+        font-size: 20px;
     }
 
     .col-md-6{
@@ -239,8 +271,8 @@ video{
     }
 
     .container-trabalho{
-        left: 35px;
-        width: 420px;
+        left: 20px;
+        width: 390px;
     }
 
     .onu{
@@ -259,23 +291,37 @@ video{
 @media only screen 
    and (max-width : 400px) {
 
+    header .navbar-dark{
+        position: absolute;
+        width: 100%;
+    }
+
     .navbar-dark .navbar-brand{
-        left: 0px;
-        font-size: 10px;
+        position: relative;
+        left: 0;
+        font-size: 12px;
+    }
+
+    .video{
+        position: relative;
+        left: 10px;
+        width: 380px;
+        height: 200px;
+    }
+    
+    video{
+        position: relative;
+        width: 380px;
+        height: 200px;
     }
 
     .title{
-        left: 75px;
-        width: 400px;
+        margin-top: 20px;
+        left: 16px;
     }
 
     .title h3{
-        font-size: 13px;
-    }
-
-    .title img{
-        left: 80px;
-        margin-top: -180px;
+        font-size: 25px;
     }
 
     .col-md-6{
@@ -283,75 +329,78 @@ video{
     }
 
     .container-trabalho{
-        left: 25px;
-        width: 350px;
-    }
-
-    .container-trabalho h4{
-        font-size: 18px;
-    }
-
-    .container-trabalho p{
-        font-size: 12px;
+        margin-top: 10px;
+        left: 20px;
+        width: 355px;
     }
 
     .onu{
-        left: 30px;
-        width: 200px;
+        left: 15px;
+        width: 300px;
     }
 
     .splitter{
         margin: 5px;
-        left: 10px;
-        width: 250px;
-    }
-    
+        left: 15px;
+        width: 300px;
+    }    
 }
 
 @media only screen 
-   and (max-width : 300px) {
+   and (max-width: 300px){
+
+    header .navbar-dark{
+        position: absolute;
+        width: 100%;
+    }
 
     .navbar-dark .navbar-brand{
-        left: 0px;
-        font-size: 10px;
-    }
-
-    .title{
-        left: 20px;
-        width: 400px;
-    }
-
-    .title h3{
-        font-size: 13px;
-    }
-
-    .title img{
-        left: 80px;
-        margin-top: -180px;
-    }
-
-    .container-trabalho{
-        left: 10px;
-        width: 280px;
-    }
-
-    .container-trabalho h4{
-        font-size: 18px;
-    }
-
-    .container-trabalho p{
+        position: relative;
+        left: -10px;
         font-size: 12px;
     }
 
+    .video{
+        position: relative;
+        margin-top: 77px;
+        width: 280px;
+        height: 150px;
+    }
+    
+    video{
+        position: relative;
+        left: 1px;
+        width: 280px;
+        height: 150px;
+    }
+
+    .title{
+        margin-top: 20px;
+        left: 25px;
+    }
+
+    .title h3{
+        font-size: 18px;
+    }
+
+    .col-md-6{
+        display: none;
+    }
+
+    .container-trabalho{
+        margin-top: 10px;
+        left: 20px;
+        width: 270px;
+    }
+
     .onu{
-        left: 30px;
-        width: 200px;
+        left: 5px;
+        width: 250px;
     }
 
     .splitter{
         margin: 5px;
-        left: 10px;
+        left: 5px;
         width: 250px;
     }
-    
 }
