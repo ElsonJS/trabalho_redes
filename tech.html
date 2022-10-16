@@ -43,9 +43,7 @@
                     <div class="collapse navbar-collapse justify-content-end" id="navbar-links">
                         <div class="navbar-nav">
                             <a class="nav-item nav-link" id="home-menu" href="index.html">Início</a>
-                            <a class="nav-item nav-link" id="tech-menu" href="#res">Resumo Executivo</a>
-                            <a class="nav-item nav-link" id="tech-menu" href="#esp">Tecnologias</a>
-                            <a class="nav-item nav-link" id="tech-menu" href="#ana">Análise</a>
+                            <a class="nav-item nav-link" href="./doc/TRABALHO EM ANDAMENTO.pdf" target="_blank">Trabalho em PDF</a>
                         </div>
                     </div>
                 </nav>
@@ -54,20 +52,22 @@
         <section class="col-md-6">
             <p><b>🔍Menu</b></p>
             <ul id="about-list">
-              <li> <a href="#res">1.RESUMO EXECUTIVO</a></li>
+              <li> <a href="#res">1. RESUMO EXECUTIVO</a></li>
               <li> <a href="#res-1">1.1. OBJETIVOS</a></li>
               <li> <a href="#res-2">1.2. JUSTIFICATIVA</a></li>
               <li> <a href="#res-3">1.3. ESTRUTURA DO PROJETO</a></li>
-              <li> <a href="#esp">2.ESPECIFICAÇÃO DA TECNOLOGIA</a></li>
+              <li> <a href="#esp">2. ESPECIFICAÇÃO DA TECNOLOGIA</a></li>
               <li> <a href="#res-4">2.1. CRIPTOGRAFIA AES-128</a></li>
               <li> <a href="#res-5">2.1.1. AUTENTICAÇÃO DA ONU</a></li>
               <li> <a href="#res-6">2.1.2. ENCAMINHAMENTO SEGURO</a></li>
               <li> <a href="#res-7">2.1.3. MAIS SEGURANÇA</a></li>
-              <li> <a href="#ana">3.ANÁLISE E ESPECIFICAÇÃO DA REDE</a></li>
+              <li> <a href="#ana">3. ANÁLISE E ESPECIFICAÇÃO DA REDE</a></li>
               <li> <a href="#res-8">3.1. ZABBIX</a></li>
               <li> <a href="#res-9">3.2. AUTOCAD MAP</a></li>
               <li> <a href="#res-10">3.3. GOOGLE EARTH</a></li>
               <li> <a href="#res-11">3.4. QGIS</a></li>
+              <li> <a href="#res-12">4. TOPOLOGIAS UTILIZADAS NO PROJETO</a></li>
+              <li> <a href="#res-13">5. LEVANTAMENTO DE REQUISITOS</a></li>
             </ul>
         </section>
         <main id="tech">
@@ -196,6 +196,43 @@
                         QGIS é um software livre com código-fonte aberto, multiplataforma de sistema de informação geográfica que permite a visualização, edição e análise de dados georreferenciados.
                     </p>
                     <img class="Zabbix" src="https://qgis.org/pt_BR/_static/images/about-screenshot.png" alt="figura Zabbix" />
+                    <br /><br />
+                    <h4 id="res-12"><b>4. TOPOLOGIAS UTILIZADAS NO PROJETO</b></h4>
+                    <br />
+                    <h5><b>📍 TOPOLOGIA EM ANEL</b></h5>
+                    <p>
+                        Para a construção da nossa rede primária usamos uma construção em anel, onde temos duas abordagens saindo do concentrador, sendo que as duas pontas se encontram em uma caixa de emenda fechando totalmente uma redundância em anel óptico.
+                    </p>
+                    <img class="t-anel" src="https://materiasparaconcursos.com.br/wp-content/uploads/2020/08/rede-de-computadores-anel2.jpg" alt="IMG TOPOLOGIA EM ANEL" />
+                    <br /><br />
+                    <h5><b>📍 TOPOLOGIA ÁRVORE</b></h5>
+                    <p>
+                        Das caixas de derivação em diante utilizamos topologia em árvore com o intuito de ramificar ao máximo a rede.
+                    </p>
+                    <img class="t-anel" src="https://files.speakerdeck.com/presentations/a46336d18cfd41d0ace3407ad4a9c2fb/slide_13.jpg" alt="IMG TOPOLOGIA ÁRVORE" />
+                    <br /><br />
+                    <h4 id="res-13"><b>5. LEVANTAMENTO DE REQUISITOS </b></h4>
+                    <br />
+                    <h5><b>📍 TESTES DURANTE A CONTRUÇÃO DA REDE:</b></h5>
+                    <p>
+                        É impossível que se tenha uma internet de alta velocidade e qualidade sem que se tenha uma infraestrutura de qualidade. Pensando nisso sugerimos que algumas precauções sejam tomadas durante a construção da rede.
+                        <br /><br />
+                        ✔️Comprimento das Fibras de acordo com o projeto.<br />
+                        ✔️Qualificação das Emendas com OTDR:
+                    </p>
+                    <img class="t-OTDR" src="https://http2.mlstatic.com/D_NQ_NP_798401-MLB48560773636_122021-O.jpg" alt="IMG OTDR" />
+                    <br /><br />
+                    <h5><b>📍 TESTES APÓS CONTRUÇÃO DA REDE:</b></h5>
+                    <p>
+                        Pensando em atender melhor cada cliente alguns testes serão feitos após o término da construção da rede.
+                        <br /><br />
+                        ✔️Inspeção de Conectores<br />
+                        ✔️Verificação da configuração da OLT<br />
+                        ✔️Teste passa falha <em>(Figura ilustrada abaixo)</em><br />
+                        ✔️Teste de Potência Final com Power Meter <em>(Figura ilustrada abaixo)</em><br />
+                    </p>
+                    <img class="t-OLP" src="https://www.viavisolutions.com/sites/default/files/main-images/olp-88.png" alt="IMG OLP-88P" />
+                    <img class="t-OLP" src="https://images.tcdn.com.br/img/img_prod/621526/power_meter_opm_overtek_275_1_20190912142922.jpg" alt="IMG Power Meter" />
                     <br /><br />
                 </div>
             </div>

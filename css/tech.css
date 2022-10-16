@@ -6,10 +6,6 @@ body{
     background-attachment: fixed;
 }
 
-.container {
-    padding: 70px 0;
-}
-
 /*CSS DA BARRA DE NAVEGAÇÃO*/
 
 header, .navbar{
@@ -164,7 +160,7 @@ video{
     position: relative;
     width: 330px;
     height: 350px;
-    left: 150px;
+    left: 90px;
     border-radius: 10px;
 }
 
@@ -182,6 +178,32 @@ video{
     height: 100%;
     border-radius: 10px;
     border: 1px solid #fff;
+}
+
+.t-anel{
+    position: relative;
+    width: 100%;
+    height: 80%;
+    border-radius: 10px;
+    border: 1px solid #fff;
+}
+
+.t-OTDR{
+    position: relative;
+    width: 400px;
+    height: 300px;
+    left: 150px;
+    border-radius: 10px;
+    border: 1px solid #fff;
+}
+
+.t-OLP{
+    position: relative;
+    width: 330px;
+    height: 350px;
+    left: 70px;
+    margin: 5px;
+    border-radius: 10px;
 }
 
 @media only screen 
@@ -227,7 +249,12 @@ video{
     .splitter{
         margin: 5px;
         left: 8px;
-       
+    }
+
+    .t-OLP{
+        left: 10px;
+        margin: 5px;
+    }      
     
 }
 
@@ -282,6 +309,11 @@ video{
 
     .splitter{
         margin: 5px;
+        left: 15px;
+        width: 300px;
+    }
+
+    .t-OTDR{
         left: 15px;
         width: 300px;
     }
@@ -403,4 +435,16 @@ video{
         left: 5px;
         width: 250px;
     }
+
+    .t-OTDR{
+        left: 5px;
+        width: 250px;
+    }
+
+    .t-OLP{
+        margin: 5px;
+        left: 5px;
+        width: 250px;
+    }  
+    
 }
