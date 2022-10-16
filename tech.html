@@ -35,9 +35,9 @@
             <div class="container" id="nav-container">
                 <nav class="navbar navbar-expand-lg fixed-top navbar-dark">
                     <a class="navbar-brand" href="index.html">
-                        ARQUITETO DO PROJETO ELSON SOUZA
+                        GRUPO ARQUITETO DE SOLUÇÕES
                     </a>
-                    <button class="navbar-toggler" type="button" data-toggle="collape" data-target="#navbar-links" aria-controls="navbar-linkes" aria-expanded="false" aria-label="toggle navigation">
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar-links" aria-controls="navbar-links" aria-expanded="false" aria-label="Toggle navigation">
                         <span class="navbar-toggler-icon"></span>
                     </button>
                     <div class="collapse navbar-collapse justify-content-end" id="navbar-links">
@@ -51,10 +51,33 @@
                 </nav>
             </div>
         </header>
+        <section class="col-md-6">
+            <p><b>🔍Menu</b></p>
+            <ul id="about-list">
+              <li> <a href="#res">1.RESUMO EXECUTIVO</a></li>
+              <li> <a href="#res-1">1.1. OBJETIVOS</a></li>
+              <li> <a href="#res-2">1.2. JUSTIFICATIVA</a></li>
+              <li> <a href="#res-3">1.3. ESTRUTURA DO PROJETO</a></li>
+              <li> <a href="#esp">2.ESPECIFICAÇÃO DA TECNOLOGIA</a></li>
+              <li> <a href="#res-4">2.1. CRIPTOGRAFIA AES-128</a></li>
+              <li> <a href="#res-5">2.1.1. AUTENTICAÇÃO DA ONU</a></li>
+              <li> <a href="#res-6">2.1.2. ENCAMINHAMENTO SEGURO</a></li>
+              <li> <a href="#res-7">2.1.3. MAIS SEGURANÇA</a></li>
+              <li> <a href="#ana">3.ANÁLISE E ESPECIFICAÇÃO DA REDE</a></li>
+              <li> <a href="#res-8">3.1. ZABBIX</a></li>
+              <li> <a href="#res-9">3.2. AUTOCAD MAP</a></li>
+              <li> <a href="#res-10">3.3. GOOGLE EARTH</a></li>
+              <li> <a href="#res-11">3.4. QGIS</a></li>
+            </ul>
+        </section>
         <main id="tech">
+            <div class="video">
+                <video controls>
+                    <source src="./" type="video/webm" />
+                </video>
+            </div>
             <div class="title">
                 <h3><b>📌PROJETO DE REDES DE COMPUTADORES</b></h3>
-                <img src="./img/faculdade-cearense.webp" alt="logo" />
             </div>
             <div class="container-trabalho">
                 <div>
@@ -71,16 +94,16 @@
                         Além da conexão com todos os quesitos citados anteriormente, também nos atentamos ao valor final que o cliente irá pagar pelo serviço. A mensalidade cobrada pela nossa empresa será consideravelmente menor comparada a provedores locais atuais, isso mostra a preocupação da empresa junto aos clientes, conseguindo aliar preço justo e qualidade no serviço.
                     </p>
                     <br />
-                    <h5><b>1.1. OBJETIVOS</b></h5>
+                    <h5 id="res-1"><b>1.1. OBJETIVOS</b></h5>
                     <p>
                         Fornecer a arquitetura adequada para implementação do provedor de internet, com foco de melhorar a qualidade de conexão com a internet dos moradores do bairro Jóquei Clube, e posteriormente oferecer o melhor serviço comparado as opções atuais e com excelência em atendimento para o cliente.                        .                        
                     </p>
                     <br />
-                    <h5><b>1.2. JUSTIFICATIVA</b></h5>
+                    <h5 id="res-2"><b>1.2. JUSTIFICATIVA</b></h5>
                     <p>
                         Visando a existência de poucas opções de provedores de internet disponíveis no bairro e ampla concorrência, iremos prover uma conexão de alta qualidade através do uso da tecnologia de fibra ótica a preços acessíveis, juntamente com o bom atendimento ao cliente promovendo a inclusão digital dos habitantes do bairro jóquei clube
                     </p>
-                    <h5><b>1.3. ESTRUTURA DO PROJETO</b></h5>
+                    <h5 id="res-3"><b>1.3. ESTRUTURA DO PROJETO</b></h5>
                     <P>
                         Para uma melhor organização e entendimento, o projeto foi organizado em capítulos. No capítulo 2 será apresentado as tecnologias utilizadas para o desenvolvimento da rede, com uma breve descrição sobre Gpon e Criptografia AES 128. A seguir no capitulo 3, uma breve análise e Especificação da Rede, será apresentado algumas ferramentas utilizadas no desenvolvimento desse projeto, Zabbix, AutoCad Maps, Google Earth, Qgis. No capítulo 4, falamos sobre as topologias utilizadas no projeto da rede, topologia em anel e árvore. No capítulo 5 contém os levantamentos dos requisitos para bom funcionamento da rede. No capítulo 6, contém os testes a serem realizados para garantir o bom funcionamento da rede, teste de potência e conexão. No capítulo 7, temos o protótipo do desenvolvimento do projeto, identificação da área a ser atendida, distribuição das caixas, conexões entre caixas e plano de emenda. No Capitulo 8, temos as considerações finais.
                     </P>
@@ -109,7 +132,7 @@
                     <img class="splitter" src="https://www.fibracem.com/wp-content/uploads/2021/06/0027_NAP_POP_POSTE-BAP.1-2.png" alt="figura splitter" />
                     <img class="splitter" src="https://www.blog.ipv7.com.br/wp-content/uploads/2019/01/Splitter-Conectorizado.jpg" alt="figura splitter" />
                     <br /> <br />
-                    <h5><b>2.1. CRIPTOGRAFIA AES-128</b></h5>
+                    <h5 id="res-4"><b>2.1. CRIPTOGRAFIA AES-128</b></h5>
                     <p>
                         Os benefícios da fibra optica são bem conhecidos no meio da TI, além da sua capacidade de transmissão e tempo de vida útil, apresenta bons argumentos quando se trata de segurança. Um dos principais pontos é a complexidade que se tem ao tentar interceptar um sinal óptico sem interromper o tráfego existente. Para melhor entendimento a transmissão entre OLT e ONU funciona da seguinte forma: No sentido de downstream os dados são enviados em broadcast (envio não direcionado). As informações de cada ONU são divididas no tempo (TDM-Time Division Multiplexing). Desta forma, toda informação provida pelo OLT é repassada a todas ONU's da rede, mas cada ONU filtra as informações que lhe são destinadas (ZTE, 2011), a abaixo ilustra esta forma de comunicação. Uma forma para se garantir a segurança dos dados transmitidos na rede é a utilização de criptografia, sendo utilizado o algoritmo Advanced Encryption Standard (AES).
                     </p>
@@ -119,15 +142,15 @@
                         A Criptografia com AES-128 transforma pacotes de dados de texto simples e os transmitem em texto cifrado. Em suma, o algoritmo AES-128 usa uma chave para alterar dados de texto simples de 128 bits em outros dados de texto cifrado de 128 bits para transmissão usando uma série de operações matemáticas. Em seguida, a extremidade de recebimento usa uma chave para descriptografar o texto cifrado.
                     </p>
                     <br />
-                    <h5><b>2.1.1. AUTENTICAÇÃO DA ONU</b></h5>
+                    <h5 id="res-5"><b>2.1.1. AUTENTICAÇÃO DA ONU</b></h5>
                     <p>
                         Para que uma ONU inicie seu tráfego na rede ela deve ser reconhecida pela OLT através de seu número de série único. A OLT pode ser configurada para impedir que qualquer ONU seja ativada sem a autorização do administrador.
                     </p>
-                    <h5><b>2.1.2. ENCAMINHAMENTO SEGURO</b></h5>
+                    <h5 id="res-6"><b>2.1.2. ENCAMINHAMENTO SEGURO</b></h5>
                     <p>
                         A OLT permite o uso de um recurso chamado Encaminhamento Seguro, quando o Encaminhamento Seguro está habilitado para uma VLAN, o serviço forma-se ciente da sessão de IP e espiona as mensagens de oferta de DHCP para as ONU's e armazena em cache as informações de endereço IP e DHCP alocadas. Se o tráfego não tiver origem no endereço correto, o tráfego será descartado, isso também funciona para dispositivos conectados com endereços IP estáticos, a OLT passa comparar o endereço IP configurado com o endereço de origem do dispositivo configurado estaticamente no quadro de dados. Se eles não corresponderem, o tráfego será descartado.
                     </p>
-                    <h5><b>2.1.3. MAIS SEGURANÇA</b></h5>
+                    <h5 id="res-7"><b>2.1.3. MAIS SEGURANÇA</b></h5>
                     <p>
                         Aqui segue mais algumas medidas a serem tomadas para aumentar a segurança da rede.<br /><br />
 
@@ -141,7 +164,7 @@
                     <p>
                         Neste capitulo descreve as ferramentas utilizadas para o desenvolvimento e implantação do nosso projeto.
                     </p>
-                    <h5><b>3.1. ZABBIX</b></h5>
+                    <h5 id="res-8"><b>3.1. ZABBIX</b></h5>
                     <p>
                         Zabbix é um software que monitora vários parâmetros de rede de computadores e saúde e integridade de servidores. Zabbix usa um mecanismo de notificação flexível que permite os usuários configurarem alerta de e-mail e sms baseado em praticamente qualquer evento. Isto permite uma rápida reação para problemas em servidores Zabbix oferece relatórios e visualização de dados com excelentes características baseado nos dados armazenados. Isso faz do Zabbix ideal para o planejamento de capacidade e da saúde dos servidores pode ser avaliado a partir de qualquer localização. Devidamente configurado, Zabbix pode desempenhar um papel importante no controle da infraestrutura de TI. Isto é igualmente verdadeiro para as pequenas organizações com poucos servidores e para as grandes empresas com muitos servidores.
                     </p>
@@ -154,13 +177,13 @@
                     <h6>Mapa</h6>
                     <img class="Zabbix" src="http://storage.ning.com/topology/rest/1.0/file/get/1271119692?profile=RESIZE_1024x1024" alt="figura Zabbix" />
                     <br /><br />
-                    <h5><b>3.2. AUTOCAD MAP</b></h5>
+                    <h5 id="res-9"><b>3.2. AUTOCAD MAP</b></h5>
                     <p>
                         O software AutoCAD Map 3D é um aplicativo de planejamento e gerenciamento de infraestruturas, onde será feito todo o projeto com caixas e cabos a serem implantados de forma Georreferenciada.
                     </p>
                     <img class="Zabbix" src="https://damassets.autodesk.net/content/dam/autodesk/www/products/autocad/fy21/toolsets/autocad-map-3d/images/autocad-map-3d-toolset-large-1920x1050.jpg" alt="figura Zabbix" />
                     <br /><br />
-                    <h5><b>3.3. GOOGLE EARTH</b></h5>
+                    <h5 id="res-10"><b>3.3. GOOGLE EARTH</b></h5>
                     <p>
                         Google Earth é um programa de computador desenvolvido e distribuído pela empresa estadunidense do Google cuja função é apresentar um modelito tridimensional do globo terrestre, construído a partir de imagens de satélite.
                     </p>
@@ -168,7 +191,7 @@
                     <br /><br />
                     <img class="Zabbix" src="https://img.ibxk.com.br/2015/06/30/30175804241109.jpg" alt="figura Zabbix" />
                     <br /><br />
-                    <h5><b>3.4. QGIS</b></h5>
+                    <h5 id="res-11"><b>3.4. QGIS</b></h5>
                     <p>
                         QGIS é um software livre com código-fonte aberto, multiplataforma de sistema de informação geográfica que permite a visualização, edição e análise de dados georreferenciados.
                     </p>

@@ -2,7 +2,7 @@
 
 body{
     font-family: 'Roboto', sans-serif;
-    background-image: linear-gradient(45deg, #FF4500 0%, 	#FFFF00 46%, #FF6347 100%);
+    background-color: #E0FFFF;
     height: 100vh;
     width: 100vh;
     background-attachment: fixed;
@@ -11,7 +11,7 @@ body{
 /*CSS DA BARRA DE NAVEGAÇÃO*/
 
 header, .navbar{
-    background-image: linear-gradient(45deg, #1C1C1C 0%, 	#0000CD 46%, #000000 100%);
+    background-color: #FF4500;
 }
 
 #nav-container{
@@ -27,21 +27,19 @@ header, .navbar{
     left: 30px;
     font-weight: bold;
     font-size: 15px;
-    filter: drop-shadow(0 0 0.4rem #7fff00);
 }
 
 .navbar-dark .navbar-brand:hover{
-    color: #FFD700;
+    color: rgb(18, 124, 156);
 }
 
 #navbar-links a {
     color: #fff;
     font-weight: bolder;
-    filter: drop-shadow(0 0 0.4rem #7fff00);
 }    
 
 #navbar-links a:hover {
-    color: #FFD700;
+    color: #333;
     font-weight: bold;
 }
 
@@ -49,30 +47,88 @@ header, .navbar{
     padding: 0.5rem .7rem;
     margin-top: 3px;
 }
+/*menu*/
+
+.col-md-6{
+    position: absolute;
+    display: block;
+    background-color: transparent;
+    background-attachment: fixed;
+    width: 230px;
+    height: 100vh;
+    margin-top: 450px;
+    left: 1px;
+}
+
+.col-md-6 p{
+    position: relative;
+    left: 25px;
+    font-size: 18px;
+}
+
+#about-list li{
+    position: relative;
+    margin: 5px;
+}
+
+#about-list a{
+    color: #000000;
+    transition: ease 0.1s;
+    font-weight: bolder;
+}
+
+#about-list a:hover{
+    color: #FF8C00;
+    font-weight: bolder;
+    text-decoration: none;
+    filter: drop-shadow(0 0 0.4rem #7fff00);
+}
+
+/*video*/
+
+.video{
+    position: relative;
+    margin-top: 90px;
+    left: 45px;
+    background-image: linear-gradient(45deg, #1C1C1C 0%, 	#0000CD 46%, #000000 100%);
+    width: 1330px;
+    height: 300px;
+    border-radius: 10px;
+    animation: flipTitle 4s;
+}
+
+@keyframes flipTitle{
+    from{
+        transform: rotateX(90deg);
+    }
+    to{
+        transform: rotateX(0deg);
+
+    }
+}
+
+video{
+    position: relative;
+    width: 1330px;
+    height: 300px;
+    border-radius: 10px;
+}
 
 /*informativo do site*/
 
 .title{
     position: relative;
-    margin-top: 160px;
-    left: 430px;
+    margin-top: 100px;
+    left: 520px;
     filter: drop-shadow(0 0 0.4rem #7fff00);
-}
-
-.title img{
-    position: relative;
-    left: 230px;
-    margin-top: -220px;
-    height: 80px;
-    width: 115px;
 }
 
 .container-trabalho{
     position: absolute;
-    width: 1000px;
+    width: 800px;
     background-color: transparent;
-    margin-top: 50px;
-    left: 230px;
+    margin-top:30px;
+    left: 400px;
     font-weight: bolder;
     filter: drop-shadow(0 0 0.4rem #7fff00);
 }
@@ -129,27 +185,31 @@ header, .navbar{
 @media only screen 
    and (max-width : 768px) {
 
-    .title{
-        left: 100px;
-    }
-
-    .container-trabalho{
-        left: 35px;
-        width: 700px;
+    .video{
+        position: relative;
+        left: 22.5px;
+        width: 650px;
+        height: 250px;
     }
     
-}
-
-@media only screen 
-   and (max-width : 700px) {
+    video{
+        position: relative;
+        width: 650px;
+        height: 250px;
+        border-radius: 10px;
+    }
 
     .title{
         left: 100px;
     }
 
+    .col-md-6{
+        display: none;
+    }
+
     .container-trabalho{
         left: 35px;
-        width: 700px;
+        width: 640px;
     }
     
 }
@@ -157,31 +217,41 @@ header, .navbar{
 @media only screen 
    and (max-width : 600px) {
 
+    .video{
+        position: relative;
+        left: 18px;
+        width: 450px;
+        height: 200px;
+    }
+    
+    video{
+        position: relative;
+        width: 450px;
+        height: 200px;
+    }
+
     .title{
-        left: 130px;
-        width: 400px;
+        left: 100px;
     }
 
-    .title h3{
-        font-size: 18px;
-    }
-
-    .title img{
-        left: 130px;
+    .col-md-6{
+        display: none;
     }
 
     .container-trabalho{
         left: 35px;
-        width: 530px;
+        width: 420px;
     }
 
     .onu{
-        left: 100px;
+        left: 15px;
+        width: 300px;
     }
 
     .splitter{
         margin: 5px;
-        left: 100px;
+        left: 15px;
+        width: 300px;
     }
     
 }
@@ -206,6 +276,10 @@ header, .navbar{
     .title img{
         left: 80px;
         margin-top: -180px;
+    }
+
+    .col-md-6{
+        display: none;
     }
 
     .container-trabalho{
