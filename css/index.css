@@ -1,8 +1,8 @@
 /*CSS GERAIS DÁ PÁGINA*/
 
 body{
-    font-family: 'Roboto', sans-serif;
-    background-color: #E0FFFF;
+    font-family: 'Roboto', sans-serif, Arial, Helvetica;
+    background-color: #FFF0F5;
     background-attachment: fixed;
 }
 
@@ -13,7 +13,7 @@ body{
 /*CSS DA BARRA DE NAVEGAÇÃO*/
 
 header, .navbar{
-    background-color: #FF4500;
+    background-color: #4682B4;
 }
  
 #nav-container{
@@ -32,7 +32,7 @@ header, .navbar{
 }
 
 .navbar-dark .navbar-brand:hover{
-    color: rgb(18, 124, 156);
+    color: rgb(233, 196, 196);
 }
 
 #navbar-links a {
