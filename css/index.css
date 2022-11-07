@@ -4,6 +4,20 @@ body{
     font-family: 'Roboto', sans-serif, Arial, Helvetica;
     background-color: #FFF0F5;
     background-attachment: fixed;
+    transition: 0.3s;
+}
+
+input[type="checkbox"] {
+    display: none;
+}
+
+.bi {
+    font-size: 1.3rem;
+    cursor: pointer;
+}
+  
+.bi-moon {
+    display: none;
 }
 
 .container {
@@ -155,25 +169,10 @@ header, .navbar{
     box-shadow: 1px 1px 2px #888;
     z-index: 1000;
 }
-  
-.fa-whatsapp {
-    margin-top: 13px;
-}
 
-.whatsapp-link {
-    position: fixed;
-    cursor:pointer;
-    width: 60px;
-    height: 60px;
-    bottom: 40px;
-    right: 23px;
-    background-color: #25d366;
+.whatsapp-link:hover{
     color: #fff;
-    border-radius: 50px;
-    text-align: center;
-    font-size: 36px;
-    box-shadow: 1px 1px 2px #888;
-    z-index: 1000;
+    filter: drop-shadow(0 0 0.4rem #FF4500);
 }
   
 .fa-whatsapp {
@@ -196,6 +195,11 @@ header, .navbar{
     z-index: 1000;
 }
 
+.github-link:hover{
+    color: #fff;
+    filter: drop-shadow(0 0 0.4rem #FF4500);
+}
+
 .fa-github{
     margin-top: 13px;
 }
@@ -216,8 +220,44 @@ header, .navbar{
     z-index: 1000;
 }
 
+.linkedin-link:hover{
+    color: #fff;
+    filter: drop-shadow(0 0 0.4rem #FF4500);
+}
+
 .fa-linkedin{
     margin-top: 13px;
+}
+
+/* Dark theme */
+.dark,
+.dark header h3 {
+  background-color: #263238;
+  color: #fff;
+}
+
+.dark .bi-sun {
+  display: none;
+}
+
+.dark .bi-moon {
+  display: block;
+}
+
+.img-fluid {
+    filter: drop-shadow(0 0 0.4rem #fff);
+}
+
+.dark .main-title {
+    color: #fff;
+}
+
+.dark .about-title {
+    color: #fff;
+}
+
+.dark #copy-area .container p {
+    color: #fff;
 }
 
 @media only screen 

@@ -14,6 +14,8 @@
 
         <!--bootstrap-->
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
         
         <link rel="stylesheet" href="./css/tech.css" />
         
@@ -30,6 +32,9 @@
         <script src="js/progressbar.min.js"></script>
         <!-- Parallax -->
         <script src="https://cdn.jsdelivr.net/parallax.js/1.4.2/parallax.min.js"></script>
+
+        <!--javascript da página-->
+        <script src="./js/index.js" defer></script>
     </head>
     <body>
         <!--Barra de navegação da página-->
@@ -47,6 +52,13 @@
                             <a class="nav-item nav-link" id="home-menu" href="index.html">Início</a>
                             <a class="nav-item nav-link" href="./doc/TRABALHO EM ANDAMENTO.pdf" target="_blank">PDF do Trabalho </a>
                         </div>
+                    </div>
+                    <div>
+                        <input type="checkbox" name="change-theme" id="change-theme" />
+                        <label for="change-theme">
+                          <i class="bi bi-sun"></i>
+                          <i class="bi bi-moon"></i>
+                        </label>
                     </div>
                 </nav>
             </div>
@@ -68,6 +80,7 @@
               <li> <a href="#res-9">3.2. AUTOCAD MAP</a></li>
               <li> <a href="#res-10">3.3. GOOGLE EARTH</a></li>
               <li> <a href="#res-11">3.4. QGIS</a></li>
+              <li> <a href="#res-111">3.5. DEMAIS ACESSÓRIOS E LOCAL DA CENTRAL</a></li>
               <li> <a href="#res-12">4. TOPOLOGIAS UTILIZADAS NO PROJETO</a></li>
               <li> <a href="#res-13">5. LEVANTAMENTO DE REQUISITOS</a></li>
               <li> <a href="#res-14">6. VALIDAÇÃO DOS REQUISITOS</a></li>
@@ -200,7 +213,46 @@
                     <p>
                         QGIS é um software livre com código-fonte aberto, multiplataforma de sistema de informação geográfica que permite a visualização, edição e análise de dados georreferenciados.
                     </p>
-                    <img class="Zabbix" src="https://qgis.org/pt_BR/_static/images/about-screenshot.png" alt="figura Zabbix" />
+                    <img class="Zabbix" src="./img/qgis.png" alt="figura Zabbix" />
+                    <br /><br /><br />
+                    <h5 id="res-111"><b>3.5. DEMAIS ACESSÓRIOS E LOCAL DA CENTRAL</b></h5>
+                    <br />
+                    <p>
+                        ✔️ Quadro Gabinete Outdoor: sistema de fechamento das portas antivandalismo
+                        com chave central e porta cadeado;
+                        <br />
+                        ✔️ Routerboard Rb: com o roteador MikroTik RB3011 você será capaz de
+                        estabelecer redes poderosas para enviar e receber informações em alta
+                        velocidade.
+                        <br />
+                        ✔️ Fonte de 48 volts da Full Power 620 2U é uma fonte Nobreak: possui
+                        sistema de alimentação automático que garante uma tensão de saída
+                        estabilizada, independente da oscilação da rede elétrica.
+                        <br />
+                        ✔️ Bateria Estacionária: pelo menos quatro baterias estacionárias para não
+                        deixar seu cliente na mão caso você acabe ficando sem energia no seu
+                        provedor.
+                        <br />
+                        ✔️ DIO (Distribuidor Interno Óptico): Amplamente utilizado para FTTH, rede de
+                        área local de fibra óptica, instrumento de fibra óptica.
+                        <br />
+                        ✔️ Roteador wireless (TP-Link - C60): com frequências 2.4 GHz, 5 GHz e
+                        velocidade wireless 867 Mbps.
+                        <br />
+                        ✔️ Cabo drop: foi projetado com capa plástica de alta resistência a traça
+                        mecânica e contra intemperismo (sol, chuva, variações de temperaturas) e com
+                        baixa emissão de fumaça (em caso de queima), de modo a atender aplicações
+                        tanto internas quanto externas, onde é exigido um cabo com uma maior
+                        qualidade e performance elevada.
+                        <br />
+                        ✔️ Fibra óptica monomodo: fibras capazes de transferir de 180.000~200.000
+                        Km/s resultando em uma latência de apenas 0.005 milissegundos por km.
+                        <br />
+                        ✔️ Régua de tomada: para deixar o serviço caprichado.
+                        <br />
+                        ✔️ Cordões ópticos: São de extrema importância porque, através deles, dados e
+                        informações se conectam.
+                    </p>
                     <br /><br />
                     <h4 id="res-12"><b>4. TOPOLOGIAS UTILIZADAS NO PROJETO</b></h4>
                     <br />
@@ -254,13 +306,13 @@
                     </p>
                     <br />
                     <h6>Figura 1 - Área a ser atendida:</h6><br />
-                    <img class="t-checklist" src="./img/novo01.png" alt="img" />
+                    <img class="t-checklist" src="./img/joquei google site.png" alt="img" />
                     <br /><br />
                     <h6>Figura 2- Conversão de Arquivos</h6><br />
                     <p>
                         ◾ Usando o QGIS transformamos o arquivo Kmz em SHP para ser aberto no AutoCad:
                     </p><br />
-                    <img class="t-checklist" src="./img/joquei google site.png" alt="img" />
+                    <img class="t-checklist" src="./img/qgis.png" alt="img" />
                     <br /><br />
                     <h6>Figura 3 - AutoCad Map</h6><br />
                     <p>
@@ -280,21 +332,21 @@
                     </p><br />
                     <img class="t-checklist" src="./img/omk.png" alt="img" />
                     <br /><br /><br />
-                    <h4 id="res-16"><b>8. CONSIDERAÇÕES FINAIS:</b></h4> 
+                    <h4 id="res-16"><b>8. ORÇAMENTO E CONSIDERAÇÕES FINAIS:</b></h4> 
                     <br />
                     <p>
                         Este trabalho é uma oportunidade de constatar que a fibra é um excelente meio de transmissão, se comparadas com fios metálicos, apresentam inúmeras vantagens, como por exemplo, imunidade a interferência eletromagnética e baixa perda de transmissão, sua implantação para atendimento a pequenas empresas e usuários na rede de acesso, esbarra no custo, se comparado a utilização de cabos metálicos.
                         <br /><br />
                         O estudo aponta que o pensamento futuro das redes cabeadas é a utilização da fibra como o principal elemento físico para a transmissão. A crescente oferta de serviço via Internet e o surgimento de novas aplicações possuem a disposição uma rede de acesso precária, não viável para distribuição de serviços de internet de alta velocidade e qualidade.
-                        <br />
+                        <br /><br />
                         O principal objetivo da empresa é mobilizar clientes, colaboradores e a sociedade para conectar pessoas e negócios, promovendo a inclusão digital e o desenvolvimento por meio de soluções inovadoras de tecnologia da informação e comunicação para os moradores e agregados do bairro Jóquei Clube com possibilidade de expansão da rede inicialmente projetada onde, buscamos ser referência em soluções integradas de tecnologia da informação e comunicação nos mercados em que atuamos de modo sustentável junto aos clientes e colaboradores.
-                        <br />
+                        <br /><br />
                         Podemos concluir pela comparação de preços entre a rede metálica e óptica, para o atendimento a um único cliente, apresentado no estudo, mostra que a diferença é mínima. O que comprova os novos investimentos das operadoras de telecomunicações em redes cabeadas por fibra óptica, principalmente para novas áreas de atendimento. Além da facilidade de implantação, mobilidade e expansão que a rede permite, se necessário no futuro, enquanto em uma rede metálica a principal dificuldade é a mobilidade e expansão da rede.
-                        <br />
+                        <br /><br />
                         O conceito deste trabalho mostra que a tecnologia GPON permite o atendimento a longas distâncias da Central, sem a necessidade de utilizar o consumo de energia elétrica no decorrer do percurso, pois utiliza somente elementos passivos, mas um critério a se voltar a atenção é a utilização de elementos passivos, ou seja, não se utiliza alimentação elétrica no percurso do enlace, apenas nos equipamentos das extremidades - transmissão e recepção o que permite uma redução nos custos de implantação e manutenção desta rede.
-                        <br />
+                        <br /><br />
                         O uso da Rede Óptica Gigabit em conjunto com as soluções FTTH, mostra atendimentos diferenciados na última milha para o cliente utilizando estruturas da rede já implantadas e permitindo a expansão para novas áreas de ocupação no bairro Jóquei Clube, principalmente com redes de fibra óptica, priorizando economia nos investimentos.
-                        <br />
+                        <br /><br />
                         A implantação da rede óptica hoje aos usuários é muito menor que a rede metálica, pois nenhuma das operadoras irá retirar toda a sua rede metálica e implantar uma Rede Óptica Passiva Gigabit, neste caso o custo é elevadíssimo e inviável. Mas a tendência é que este tipo de rede seja instalado e utilizado para quaisquer tipos de serviços, uma vez que sua estrutura permite o uso de outros serviços que podem ser agregados no mesmo cabeamento, tais como Serviço de telefonia fixa e/ou Tv por internet - IPTV, tornando assim o acesso a todos clientes de maneira financeiramente viável e de alta qualidade.
                     </p>
                 </div>
@@ -311,5 +363,16 @@
                 <i class="fa fa-linkedin"></i>
             </a>
         </div>
+        <footer>
+            <div id="copy-area">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <p>Copyright © 2022 EJS Developer Todos os direitos reservados <a href="https://www.linkedin.com/in/elson-souza-01a58a20a">web development solutions</a></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
     </body>
 </html>

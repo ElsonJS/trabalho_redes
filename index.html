@@ -12,6 +12,8 @@
 
         <!--bootstrap-->
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
         
         <link rel="stylesheet" href="./css/index.css" />
         
@@ -28,6 +30,9 @@
         <script src="js/progressbar.min.js"></script>
         <!-- Parallax -->
         <script src="https://cdn.jsdelivr.net/parallax.js/1.4.2/parallax.min.js"></script>
+
+        <!--javascript da página-->
+        <script src="./js/index.js" defer></script>
     </head>
     <body>
         <!--Barra de navegação da página-->
@@ -43,8 +48,15 @@
                     <div class="collapse navbar-collapse justify-content-end" id="navbar-links">
                         <div class="navbar-nav">
                             <a class="nav-item nav-link" id="home-menu" href="index.html">Início</a>
-                            <a class="nav-item nav-link" id="tech-menu" href="tech.html">Apresentação</a>
+                            <a class="nav-item nav-link" id="tech-menu" href="tech.html">Projeto</a>
                         </div>
+                    </div>
+                    <div>
+                        <input type="checkbox" name="change-theme" id="change-theme" />
+                        <label for="change-theme">
+                          <i class="bi bi-sun"></i>
+                          <i class="bi bi-moon"></i>
+                        </label>
                     </div>
                 </nav>
             </div>
@@ -53,22 +65,22 @@
             <div id="about-area">
                 <div class="container">
                     <div class="row">
-                      <div class="col-12"> 
-                        <h3 class="main-title">SOLUÇÃO EM PROVEDOR DE INTERNET</h3>
-                      </div>
-                      <div class="col-md-6">
-                        <img class="img-fluid" src="./img/faculdade-cearense.webp" alt="logo faculdade">
-                      </div>
-                      <div class="col-md-6">
-                        <h3 class="about-title">ARQUITETO DO PROJETO</h3>
-                        <p>ELSON SOUZA</p>
-                        <ul id="about-list">
-                          <li><i class="fas fa-check"></i> FACULDADE CEARENSE</li>
-                          <li><i class="fas fa-check"></i> GRADUAÇÃO EM ANÁLISE E DESENVOLVIMENTO DE SISTEMAS.</li>
-                          <li><i class="fas fa-check"></i> CLIENTE: BAIRRO JÓQUEI CLUBE</li>
-                          <li><i class="fas fa-check"></i> PROJETO DE REDES</li>
-                        </ul>
-                      </div>
+                        <div class="col-12"> 
+                            <h3 class="main-title">SOLUÇÃO EM PROVEDOR DE INTERNET</h3>
+                        </div>
+                        <div class="col-md-6">
+                            <img class="img-fluid" src="./img/faculdade-cearense.webp" alt="logo faculdade">
+                        </div>
+                        <div class="col-md-6">
+                            <h3 class="about-title">ARQUITETO DO PROJETO</h3>
+                            <p>ELSON SOUZA</p>
+                            <ul id="about-list">
+                                <li><i class="fas fa-check"></i> FACULDADE CEARENSE</li>
+                                <li><i class="fas fa-check"></i> GRADUAÇÃO EM ANÁLISE E DESENVOLVIMENTO DE SISTEMAS.</li>
+                                <li><i class="fas fa-check"></i> CLIENTE: BAIRRO JÓQUEI CLUBE</li>
+                                <li><i class="fas fa-check"></i> PROJETO DE REDES</li>
+                            </ul>
+                        </div>
                     </div>
                   </div>
               </div>

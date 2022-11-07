@@ -4,9 +4,24 @@ body{
     font-family: 'Roboto', sans-serif, Arial, Helvetica;
     background-color: 	#FFF0F5;
     background-attachment: fixed;
+    transition: 0.3s;
+}
+
+input[type="checkbox"] {
+    display: none;
+}
+
+.bi {
+    font-size: 1.3rem;
+    cursor: pointer;
+}
+  
+.bi-moon {
+    display: none;
 }
 
 /*CSS DA BARRA DE NAVEGAÇÃO*/
+
 
 header, .navbar{
     background-color: #4682B4;
@@ -73,6 +88,7 @@ header, .navbar{
 #about-list a{
     color: #000000;
     font-weight: bolder;
+    transition: all ease 0.3s;
 }
 
 #about-list a:hover{
@@ -218,6 +234,34 @@ video{
     border: 1px solid #fff;
 }
 
+ /*footer*/
+
+#copy-area {
+    background-color: transparent;
+    font-size: 10px;
+}
+  
+#copy-area .container {
+    margin-top: 16600px;
+    text-align: center;
+}
+
+#copy-area .container p {
+    margin-bottom: 0;
+    color: #333;
+}
+
+#copy-area .container a {
+    font-weight: bold;
+    color: #FF4500;
+    text-decoration: none;
+}
+
+#copy-area .container a:hover {
+    text-decoration: none;
+    color: #3EC1D5;
+}
+
 /*contatos flutuantes*/
 
 .whatsapp-link {
@@ -293,6 +337,37 @@ video{
 
 .fa-linkedin{
     margin-top: 13px;
+}
+
+/* Dark theme */
+.dark,
+.dark header main {
+    background-color: #263238;
+    color: #fff;
+}
+
+.dark .bi-sun {
+    display: none;
+}
+
+.dark .bi-moon {
+    display: block;
+}
+
+.dark .col-md-6 p {
+    color: #fff;
+}
+
+.dark #about-list li a {
+    color: #fff;
+}
+
+.dark .title, .container-trabalho {
+    color: #fff;
+}
+
+.dark #copy-area .container p {
+    color: #fff;
 }
 
 @media only screen 
