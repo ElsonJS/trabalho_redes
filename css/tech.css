@@ -20,46 +20,6 @@ input[type="checkbox"] {
     display: none;
 }
 
-/*CSS DA BARRA DE NAVEGAÇÃO*/
-
-
-header, .navbar{
-    background-color: #4682B4;
-}
-
-#nav-container{
-    padding-top: 0;
-    padding-bottom: 0;
-}
-
-.navbar-dark .navbar-brand{
-    position: relative;
-    padding: 0;
-    color: #fff;
-    margin-top: 5px;
-    left: 30px;
-    font-weight: bold;
-    font-size: 15px;
-}
-
-.navbar-dark .navbar-brand:hover{
-    color: rgb(233, 196, 196);
-}
-
-#navbar-links a {
-    color: #fff;
-    font-weight: bolder;
-}    
-
-#navbar-links a:hover {
-    color: #333;
-    font-weight: bold;
-}
-
-.navbar-expand-lg .navbar-nav .nav-link{
-    padding: 0.5rem .7rem;
-    margin-top: 3px;
-}
 /*menu*/
 
 .col-md-6{
@@ -147,11 +107,11 @@ video{
     color: #000000;
 }
 
-.container-trabalho p{
+.container-trabalho p {
     text-align: justify;
 }
 
-.gpom{
+.gpom {
     position: relative;
     width: 100%;
     height: 300px;
@@ -159,7 +119,7 @@ video{
     border: 1px solid #fff;
 }
 
-.OLT{
+.OLT {
     position: relative;
     width: 100%;
     height: 300px;
@@ -167,7 +127,7 @@ video{
     border: 1px solid #fff;
 }
 
-.onu{
+.onu {
     position: relative;
     width: 330px;
     height: 300px;
@@ -176,7 +136,7 @@ video{
     border: 1px solid #fff;
 }
 
-.splitter{
+.splitter {
     position: relative;
     width: 330px;
     height: 350px;
@@ -184,7 +144,7 @@ video{
     border-radius: 10px;
 }
 
-.aes{
+.aes {
     position: relative;
     width: 100%;
     height: 300px;
@@ -192,7 +152,7 @@ video{
     border: 1px solid #fff;
 }
 
-.Zabbix{
+.Zabbix {
     position: relative;
     width: 100%;
     height: 100%;
@@ -200,7 +160,7 @@ video{
     border: 1px solid #fff;
 }
 
-.t-anel{
+.t-anel {
     position: relative;
     width: 100%;
     height: 80%;
@@ -208,7 +168,7 @@ video{
     border: 1px solid #fff;
 }
 
-.t-OTDR{
+.t-OTDR {
     position: relative;
     width: 400px;
     height: 300px;
@@ -217,7 +177,7 @@ video{
     border: 1px solid #fff;
 }
 
-.t-OLP{
+.t-OLP {
     position: relative;
     width: 330px;
     height: 350px;
@@ -226,10 +186,19 @@ video{
     border-radius: 10px;
 }
 
-.t-checklist{
+.t-checklist {
     position: relative;
     width: 100%;
     height: 100%;
+    border-radius: 10px;
+    border: 1px solid #fff;
+}
+
+.t-final {
+    position: relative;
+    width: 400px;
+    height: 300px;
+    left: 150px;
     border-radius: 10px;
     border: 1px solid #fff;
 }
@@ -242,7 +211,7 @@ video{
 }
   
 #copy-area .container {
-    margin-top: 16600px;
+    margin-top: 18000px;
     text-align: center;
 }
 
@@ -362,7 +331,11 @@ video{
     color: #fff;
 }
 
-.dark .title, .container-trabalho {
+.dark .title {
+    color: #fff;
+}
+
+.dark .container-trabalho {
     color: #fff;
 }
 
@@ -418,7 +391,45 @@ video{
     .t-OLP{
         left: 10px;
         margin: 5px;
-    }      
+    }
+    
+    table {
+        position: relative;
+        font-size: 12px;
+        font-weight: bold;
+
+    }
+
+    /*contatos flutuantes*/
+
+    .whatsapp-link {
+        right: 110px;
+    }
+
+    .whatsapp-link:hover {
+        filter: none;
+    }
+    .github-link {
+        right: 110px;
+    }
+
+    .github-link:hover{
+        filter: none;
+    }
+
+    .linkedin-link {
+        right: 110px;
+    }
+
+    .linkedin-link:hover {
+        filter: none;
+    }
+
+    /*footer*/
+
+    #copy-area .container {
+        margin-top: 17700px;
+    }
     
 }
 
@@ -481,6 +492,50 @@ video{
         left: 15px;
         width: 300px;
     }
+
+    .t-final {
+        left: 15px;
+        width: 300px;
+    }
+
+    table {
+        position: relative;
+        left: -23px;
+        font-size: 8.5px;
+        font-weight: bold;
+
+    }
+
+    /*contatos flutuantes*/
+
+    .whatsapp-link {
+        right: 23px;
+    }
+
+    .whatsapp-link:hover {
+        filter: none;
+    }
+    .github-link {
+        right: 23px;
+    }
+
+    .github-link:hover {
+        filter: none;
+    }
+
+    .linkedin-link {
+        right: 23px;
+    }
+
+    .linkedin-link:hover {
+        filter: none;
+    }
+
+    /*footer*/
+
+    #copy-area .container {
+        margin-top: 19400px;
+    }
     
 }
 
@@ -539,7 +594,38 @@ video{
         margin: 5px;
         left: 15px;
         width: 300px;
-    }    
+    }
+
+    /*contatos flutuantes*/
+
+    .whatsapp-link {
+        right: 60px;
+    }
+
+    .whatsapp-link:hover {
+        filter: none;
+    }
+    .github-link {
+        right: 60px;
+    }
+
+    .github-link:hover {
+        filter: none;
+    }
+
+    .linkedin-link {
+        right: 60px;
+    }
+
+    .linkedin-link:hover {
+        filter: none;
+    }
+
+    /*footer*/
+
+    #copy-area .container {
+        margin-top: 20100px;
+    }
 }
 
 @media only screen 
@@ -609,6 +695,44 @@ video{
         margin: 5px;
         left: 5px;
         width: 250px;
-    }  
+    }
+
+    .t-final {
+        margin: 5px;
+        left: 5px;
+        width: 250px;
+    }
+
+    /*contatos flutuantes*/
+
+    .whatsapp-link {
+        right: 160px;
+    }
+
+    .whatsapp-link:hover {
+        filter: none;
+    }
+    .github-link {
+        right: 160px;
+    }
+
+    .github-link:hover {
+        filter: none;
+    }
+
+    .linkedin-link {
+        right: 160px;
+
+    }
+
+    .linkedin-link:hover {
+        filter: none;
+    }
+
+    /*footer*/
+
+    #copy-area .container {
+        margin-top: 22500px;
+    }
     
 }

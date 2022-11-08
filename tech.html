@@ -16,6 +16,10 @@
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
 
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+        <link href="https://getbootstrap.com/docs/5.2/assets/css/docs.css" rel="stylesheet">
         
         <link rel="stylesheet" href="./css/tech.css" />
         
@@ -25,7 +29,9 @@
         integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
         crossorigin="anonymous"></script>
         <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
-        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+        
+        
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
         <!-- Font Awesome -->
         <script src="https://kit.fontawesome.com/bf7e05c402.js" crossorigin="anonymous"></script>
         <!-- Progress Bar -->
@@ -39,29 +45,49 @@
     <body>
         <!--Barra de navegação da página-->
         <header>
-            <div class="container" id="nav-container">
-                <nav class="navbar navbar-expand-lg fixed-top navbar-dark">
-                    <a class="navbar-brand" href="index.html">
-                        GRUPO ARQUITETO DE SOLUÇÕES
-                    </a>
-                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar-links" aria-controls="navbar-links" aria-expanded="false" aria-label="Toggle navigation">
+            <nav class="navbar navbar-dark bg-dark fixed-top">
+                <div class="container-fluid">
+                    <a class="navbar-brand" href="index.html">GRUPO ARQUITETO DE SOLUÇÕES</a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasDarkNavbar" aria-controls="offcanvasDarkNavbar">
                         <span class="navbar-toggler-icon"></span>
                     </button>
-                    <div class="collapse navbar-collapse justify-content-end" id="navbar-links">
-                        <div class="navbar-nav">
-                            <a class="nav-item nav-link" id="home-menu" href="index.html">Início</a>
-                            <a class="nav-item nav-link" href="./doc/TRABALHO EM ANDAMENTO.pdf" target="_blank">PDF do Trabalho </a>
+                    <div class="offcanvas offcanvas-end text-bg-dark" tabindex="-1" id="offcanvasDarkNavbar" aria-labelledby="offcanvasDarkNavbarLabel">
+                        <div>
+                            <input type="checkbox" name="change-theme" id="change-theme" />
+                            <label for="change-theme">
+                              <i class="bi bi-sun"></i>
+                              <i class="bi bi-moon"></i>
+                            </label>
+                        </div>
+                        <div class="offcanvas-header">
+                            <h5 class="offcanvas-title" id="offcanvasDarkNavbarLabel">Menu</h5>
+                            <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                        </div>
+                        <div class="offcanvas-body">
+                            <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                                <li class="nav-item">
+                                    <a class="nav-link active" aria-current="page" href="index.html">Início</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="sllide.html">Apresentação</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="./doc/Projeto em PDF.pdf" target="_blank">PDF do Projeto</a>
+                                </li>
+                            </ul>
+                            <br>
+                            <form action="https://api.staticforms.xyz/submit" method="post">
+                                <p>Mande-me uma menssagem:</p>
+                                <input type="hidden" name="accessKey" value="97e7bdcd-f742-48b7-8b71-defa5b3b5454">
+                                <input type="text" class="form-control me-2" placeholder="E-mail" name="email"><br>
+                                <input type="text" class="form-control me-2" placeholder="Assunto" name="name"><br>
+                                <textarea class="form-control me-2" rows="3" placeholder="Sua mensagem..." name="message"></textarea><br>
+                                <button class="btn btn-outline-success" type="submit">Enviar</button>
+                            </form>
                         </div>
                     </div>
-                    <div>
-                        <input type="checkbox" name="change-theme" id="change-theme" />
-                        <label for="change-theme">
-                          <i class="bi bi-sun"></i>
-                          <i class="bi bi-moon"></i>
-                        </label>
-                    </div>
-                </nav>
-            </div>
+                </div>
+            </nav>
         </header>
         <section class="col-md-6">
             <p><b>🔍Links rápidos</b></p>
@@ -85,7 +111,8 @@
               <li> <a href="#res-13">5. LEVANTAMENTO DE REQUISITOS</a></li>
               <li> <a href="#res-14">6. VALIDAÇÃO DOS REQUISITOS</a></li>
               <li> <a href="#res-15">7. PROTÓTIPO DA REDE</a></li>
-              <li> <a href="#res-16">8. CONSIDERAÇÕES FINAIS</a></li>
+              <li> <a href="#res-16">8. ORÇAMENTO</a></li>
+              <li> <a href="#res-17">8.1. CONSIDERAÇÕES FINAIS</a></li>
             </ul>
         </section>
         <main id="tech">
@@ -330,9 +357,139 @@
                     <p>
                         ◾ Este diagrama mostra uma ideia de como será feita a instalação sinal do projeto.
                     </p><br />
-                    <img class="t-checklist" src="./img/omk.png" alt="img" />
+                    <img class="t-final" src="./img/FINAL01.webp" alt="img diagrama final 01" />
+                    <img class="t-final" src="./img/FINAL02.webp" alt="img diagrama final 02" />
                     <br /><br /><br />
                     <h4 id="res-16"><b>8. ORÇAMENTO E CONSIDERAÇÕES FINAIS:</b></h4> 
+                    <br />
+                    <table class="table table-hover">
+                        <thead>
+                            <tr>
+                                <th>EQUIPAMENTO</th>
+                                <th>MARCA</th>
+                                <th>MODELO</th>
+                                <th>QUANTIDADE</th>
+                                <th>VALOR UNITÁRIO</th>
+                                <th>VALOR TOTAL</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>OLT</td>
+                                <td>DIGISTAR</td>
+                                <td>DOLT 14416</td>
+                                <td>1</td>
+                                <td>R$24.223,76</td>
+                                <td>R$24.223,76</td>
+                            </tr>
+                            <tr>
+                                <td>ONU</td>
+                                <td>TP-Link</td>
+                                <td>XZ000-G3</td>
+                                <td>1024</td>
+                                <td>R$183,7</td>
+                                <td>R$188.108,80</td>
+                            </tr>
+                            <tr>
+                                <td>Distribuidor Interno Óptico</td>
+                                <td>Shoreline</td>
+                                <td>Pa63</td>
+                                <td>2</td>
+                                <td>R$539,00</td>
+                                <td>R$1.078,00</td>
+                            </tr>
+                            <tr>
+                                <td>Cordão óptico 2m</td>
+                                <td>Pier Telecom</td>
+                                <td>SC-APC / SC-APC</td>
+                                <td>20m</td>
+                                <td>R$16,24</td>
+                                <td>R$ 324,80</td>
+                            </tr>
+                            <tr>
+                                <td>Régua de tomada</td>
+                                <td>Emplac</td>
+                                <td>F50190</td>
+                                <td>1</td>
+                                <td>R$178,00</td>
+                                <td>R$178,00</td>
+                            </tr>
+                            <tr>
+                                <td>Fibra óptica monomodo 500mt</td>
+                                <td>Transcend</td>
+                                <td>SM</td>
+                                <td>2 Bobina</td>
+                                <td>R$2.125,00</td>
+                                <td>R$4.250,00</td>
+                            </tr>
+                            <tr>
+                                <td>Cabo drop 1km</td>
+                                <td>Transcend</td>
+                                <td>Bobina Mini Drop 1F</td>
+                                <td>1 Bobina</td>
+                                <td>R$609,00</td>
+                                <td>R$609,00</td>
+                            </tr>
+                            <tr>
+                                <td>Splitter</td>
+                                <td>HFO</td>
+                                <td>CTO 2 travas 1 x 16</td>
+                                <td>70</td>
+                                <td>R$1.649,00</td>
+                                <td>R$115.430,00</td>
+                            </tr>
+                            <tr>
+                                <td>Roteador wireless 867 Mbps Banda dupla</td>
+                                <td>TP-Link</td>
+                                <td>C60</td>
+                                <td>1024</td>
+                                <td>R$199,00</td>
+                                <td>R$203.776,00</td>
+                            </tr>
+                            <tr>
+                                <td>Routerboard Rb</td>
+                                <td>MikroTik</td>
+                                <td>RB3011</td>
+                                <td>1</td>
+                                <td>R$1.419,00</td>
+                                <td>R$1.419,00</td>
+                            </tr>
+                            <tr>
+                                <td>Quadro Gabinete outdoor</td>
+                                <td>Metalúrgica Cruzeiro</td>
+                                <td>Outdoor</td>
+                                <td>1</td>
+                                <td>R$1.137,77</td>
+                                <td>R$1.137,77</td>
+                            </tr>
+                            <tr>
+                                <td>Bateria Estacionária</td>
+                                <td>Duran</td>
+                                <td>DF2000</td>
+                                <td>4</td>
+                                <td>R$799,00</td>
+                                <td>R$3.196,00</td>
+                            </tr>
+                            <tr>
+                                <td>Fonte Nobreak</td>
+                                <td>Volt</td>
+                                <td>Fonte 620W</td>
+                                <td>1</td>
+                                <td>R$1.899,00</td>
+                                <td>R$1.899,00</td>
+                            </tr>
+                            <tr>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td>R$34.977,47</td>
+                                <td>R$545.630,13</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <br /><br />
+                    <h5 id="res-17"><b>8.1. CONSIDERAÇÕES FINAIS:</b></h5>
                     <br />
                     <p>
                         Este trabalho é uma oportunidade de constatar que a fibra é um excelente meio de transmissão, se comparadas com fios metálicos, apresentam inúmeras vantagens, como por exemplo, imunidade a interferência eletromagnética e baixa perda de transmissão, sua implantação para atendimento a pequenas empresas e usuários na rede de acesso, esbarra no custo, se comparado a utilização de cabos metálicos.
@@ -370,6 +527,7 @@
                         <div class="col-md-12">
                             <p>Copyright © 2022 EJS Developer Todos os direitos reservados <a href="https://www.linkedin.com/in/elson-souza-01a58a20a">web development solutions</a></p>
                         </div>
+                        <br /><br />
                     </div>
                 </div>
             </div>

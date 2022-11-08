@@ -1,0 +1,137 @@
+/*CSS GERAIS DÁ PÁGINA*/
+
+body{
+    font-family: 'Roboto', sans-serif, Arial, Helvetica;
+    background-color: 	#FFF0F5;
+    background-attachment: fixed;
+    transition: 0.3s;
+}
+
+input[type="checkbox"] {
+    display: none;
+}
+
+.bi {
+    font-size: 1.3rem;
+    cursor: pointer;
+}
+  
+.bi-moon {
+    display: none;
+}
+
+/* Dark theme */
+.dark,
+.dark header main {
+    background-color: #263238;
+    color: #fff;
+}
+
+.dark .bi-sun {
+    display: none;
+}
+
+.dark .bi-moon {
+    display: block;
+}
+
+
+/*CSS DA BARRA DE NAVEGAÇÃO*/
+
+header, .navbar{
+    background-color: #263238;
+}
+ 
+#nav-container{
+    padding-top: 0;
+    padding-bottom: 0;
+    color: #fff;
+}
+
+#nav-container:hover {
+    color: #fffb04;
+}
+
+
+.navbar-dark .navbar-brand{
+    position: relative;
+    padding: 0;
+    color: #fff;
+    margin-top: 5px;
+    left: 30px;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.navbar-dark .navbar-brand:hover{
+    color: rgb(233, 196, 196);
+}
+
+#navbar-links a {
+    color: #fff;
+    font-weight: bolder;
+}
+
+#navbar-links a:hover {
+    color: #ec6409;
+    font-weight: bold;
+}
+
+.navbar-expand-lg .navbar-nav .nav-link{
+    padding: 0.5rem .9rem;
+    margin-top: 3px;
+}
+
+/*css do slide*/
+
+.container-fluid {
+    position: absolute;
+    margin-top: 50px;
+    padding: 0;
+}
+  
+#mainSlider .carousel-inner, #mainSlider .carousel-item {
+    height: 100vh;
+}
+
+#mainSlider .carousel-caption {
+    top: 30%;
+}
+
+#mainSlider .carousel-caption h2 {
+    font-size: 50px;
+    margin-bottom: 30px;
+    color: #263238;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#mainSlider .carousel-caption p {
+    font-size: 22px;
+    font-weight: 300;
+    margin-bottom: 100px;
+    color: black;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.main-btn {
+    background-color: #65DAF9;
+    color: #FFF;
+    text-transform: uppercase;
+    width: 200px;
+    height: 60px;
+    padding: 10px 20px;
+    border-radius: 30px;
+    border: 3px solid transparent;
+    transition: .5s;
+}
+
+.main-btn:hover {
+    text-decoration: none;
+    color: black;
+    background-color: transparent;
+    border-color: #3EC1D5;
+}
+
+.carousel-indicators .active {
+    background-color: #65DAF9;
+}

@@ -24,46 +24,6 @@ input[type="checkbox"] {
     padding: 70px 0;
 }
 
-/*CSS DA BARRA DE NAVEGAÇÃO*/
-
-header, .navbar{
-    background-color: #4682B4;
-}
- 
-#nav-container{
-    padding-top: 0;
-    padding-bottom: 0;
-}
-
-.navbar-dark .navbar-brand{
-    position: relative;
-    padding: 0;
-    color: #fff;
-    margin-top: 5px;
-    left: 30px;
-    font-weight: bold;
-    font-size: 20px;
-}
-
-.navbar-dark .navbar-brand:hover{
-    color: rgb(233, 196, 196);
-}
-
-#navbar-links a {
-    color: #fff;
-    font-weight: bolder;
-}
-
-#navbar-links a:hover {
-    color: #333;
-    font-weight: bold;
-}
-
-.navbar-expand-lg .navbar-nav .nav-link{
-    padding: 0.5rem .9rem;
-    margin-top: 3px;
-}
-
 /*informações*/
 
 .container{
